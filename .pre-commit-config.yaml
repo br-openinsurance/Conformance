@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: check-zip
+        name: Check Zip
+        language: python
+        entry: python -m scripts.check-zip
+        args: [1.0.0, acceptance-and-branches-abroad, business, consents, financial-risk, patrimonial, personal, resources, responsibility]
+        exclude: ".*"
+        always_run: true
