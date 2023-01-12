@@ -16,7 +16,6 @@ func GenerateTable(apis []string, phase string, version string) {
 	for i, api := range apis {
 		files := getEveryFileForApiAndVersion(baseUrl, version, api, baseData)
 		for _, file := range files {
-			// dump
 			dump = append(dump, []string {
 				file["Org Id"],
 				file["Deployment"],
@@ -25,7 +24,6 @@ func GenerateTable(apis []string, phase string, version string) {
 				file["Date"],
 			})
 
-			// table
 			if ind := searchFileInTable(table, file); ind == -1 {
 				newRow := make([]string, len(tableHeaders))
 				newRow[0] = file["Organisation"]
