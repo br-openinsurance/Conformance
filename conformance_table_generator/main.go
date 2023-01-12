@@ -15,7 +15,7 @@ var (
 
 func init() {
 	flag.StringVar(&Target, "t", "all", "Target Table")
-	flag.StringVar(&Version, "v", "2", "API Version")
+	flag.StringVar(&Version, "v", "1", "API Version")
 	flag.Parse()
 }
 
