@@ -16,14 +16,14 @@ func GenerateTable(apis []string, phase string, version string) {
 	filteredFiles := filterFilesByApisAndVersion(submissionFiles, apis, version)
 
 	// create table and dump
-	tableHeaders := []string {"Conglomerado", "Deployment"}
+	tableHeaders := []string {"Organização", "Deployment"}
 	tableHeaders = append(tableHeaders, apis...)
 	table := [][]string {tableHeaders}
 
 	dumpHeaders := []string {"Id da Organização", "Deployment", "API", "Version", "Data"}
 	dump := [][]string {dumpHeaders}
 
-	organisationsMap := makeOrganisationsMap()
+	organisationsMap := makeOrganisationsMap(false)
 
 	for _, file := range filteredFiles {
 		fileSplit := strings.Split(file, "/")
