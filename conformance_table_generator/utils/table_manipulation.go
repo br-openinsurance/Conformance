@@ -6,9 +6,9 @@ import (
 	"os"
 )
 
-func searchFileInTable(table [][]string, file map[string]string) int {
+func searchFileInTable(table [][]string, orgId string, deployment string) int {
 	for i, row := range table {
-		if row[0] == file["Organisation"] && row[1] == file["Deployment"] {
+		if row[0] == orgId && row[1] == deployment {
 			return i
 		}
 	}
