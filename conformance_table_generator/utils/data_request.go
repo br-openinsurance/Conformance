@@ -50,7 +50,7 @@ func importSubmittedFiles(repositoryUrl string) models.GithubTree {
 	return filteredResults
 }
 
-func makeOrganisationsMap() map[string]string {
+func makeOrganisationsMap(useParentOrg bool) map[string]string {
 	organisations := make(map[string]string)
 
 	client := http.Client{}
@@ -72,16 +72,22 @@ func makeOrganisationsMap() map[string]string {
 		log.Fatal("Failed to decode response from roles endpoint: ", err)
 	}
 
-	orgsWithParent := make(map[string]string)
-	for _, role := range roles {
-		if role.ParentOrganisationReference != nil && role.ParentOrganisationReference != role.RegistrationNumber {
-			orgsWithParent[role.RegistrationNumber[:8]] = fmt.Sprintf("%v", role.ParentOrganisationReference)[:8]
-		} else {
+	if useParentOrg {
+		orgsWithParent := make(map[string]string)
+		for _, role := range roles {
+			if role.ParentOrganisationReference != nil && role.ParentOrganisationReference != role.RegistrationNumber {
+				orgsWithParent[role.RegistrationNumber[:8]] = fmt.Sprintf("%v", role.ParentOrganisationReference)[:8]
+			} else {
+				organisations[role.RegistrationNumber[:8]] = role.RegisteredName
+			}
+		}
+		for child, parent := range orgsWithParent {
+			organisations[child] = organisations[parent]
+		}
+	} else {
+		for _, role := range roles {
 			organisations[role.RegistrationNumber[:8]] = role.RegisteredName
 		}
-	}
-	for child, parent := range orgsWithParent {
-		organisations[child] = organisations[parent]
 	}
 
 	return organisations
