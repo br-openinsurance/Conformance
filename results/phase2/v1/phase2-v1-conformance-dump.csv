@@ -1,15 +1,28 @@
 Id da Organização,Deployment,API,Version,Data
 01704513,SulAmericaSeguros,consents,v1,12-01-2023
-01704513,SulAmericaSeguros,resources,v1,12-01-2023
+03502099,Chubb Opin v1.0,consents,v1,13-01-2023
 03546261,Cardif-Vida-LinaB3-Opin-v.1.0,consents,v1,12-01-2023
+08279191,Cardif-Seguros-LinaB3-Opin-v.1.0,consents,v1,13-01-2023
+33055146,1.0,consents,v1,13-01-2023
+33245762,Too Seguros Auth Server 1.0.0,consents,v1,13-01-2022
+44187990,Darwin-LinaB3-Opin-v.1.0,consents,v1,12-01-2023
+61100145," IndianaSeguros",consents,v1,12-01-2023
+61383493,Sompo OPIN v1,consents,v1,13-01-2023
+61550141,LibertySeguros,consents,v1,12-01-2023
+01582075,Rio Grande Seguradora Auth Server v1.0.0,resources,v1,13-01-2023
+01704513,SulAmericaSeguros,resources,v1,12-01-2023
+03209092,SANTANDER-CAPITALIZACAO-SA-API-RESOURCES-13-JANUARY-2023,resources,v1,13-01-2023
+03502099,Chubb Opin v1.0,resources,v1,13-01-2023
 03546261,Cardif-Vida-LinaB3-Opin-v.1.0,resources,v1,12-01-2023
 07746953,LuizaSeg-LinaB3-Opin-v.1.0,resources,v1,12-01-2023
 08279191,Cardif-Seguros-LinaB3-Opin-v.1.0,resources,v1,12-01-2023
+13615969,EVIDENCE-PREVIDENCIA-SA-API-RESOURCES-13-JANUARY-2023,resources,v1,13-01-2023
 27665207,brasilprev2022,resources,v1,12-01-2023
 28196889,Opus Open Insurance v1,resources,v1,12-01-2023
-44187990,Darwin-LinaB3-Opin-v.1.0,consents,v1,12-01-2023
+33245762,Too Seguros Auth Server 1.0.0,resources,v1,13-10-2023
+38155804,Caixa Capitalização Auth Server v1.0.0,resources,v1,13-01-2023
+42283770,Icatu Seguros Auth Server v1.0.0,resources,v1,13-01-2023
 44187990,Darwin-LinaB3-Opin-v.1.0,resources,v1,12-01-2023
-61100145," IndianaSeguros",consents,v1,12-01-2023
 61100145," IndianaSeguros",resources,v1,12-01-2023
-61550141,LibertySeguros,consents,v1,12-01-2023
 61550141,LibertySeguros,resources,v1,12-01-2023
+87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-API-RESOURCES-13-JANUARY-2023,resources,v1,13-01-2023
