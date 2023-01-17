@@ -1,2 +1,4 @@
-| Conglomerado | Marca | Consentimento API | Dados Cadastrais (PF) API | Dados Cadastrais (PJ) API | Resources API | Aceitação e Sucursal no exterior API | Riscos Financeiros API | Patrimonial API | Responsabilidade API |
-|---|---|---|---|---|---|---|---|---|---|
+|          Conglomerado           |            Marca             |                                                                           Consentimento API                                                                            | Dados Cadastrais (PF) API | Dados Cadastrais (PJ) API | Resources API | Aceitação e Sucursal no exterior API | Riscos Financeiros API | Patrimonial API | Responsabilidade API |
+|----------------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|---|---|---|---|
+| Raidiam Services Ltd | AuthServer16011          | [16-Jan-2023](https://github.com/br-openinsurance/Conformance/blob/main/submissions/functional/consents/1.0.0/33055146_1.0_consents_v1_13-01-2023.zip) |   |   |   |   |   |   |   |
+| Raidiam Services Ltd | Servidor Teste - Exemplo | [16-Jan-2023](https://github.com/br-openinsurance/Conformance/blob/main/submissions/functional/consents/1.0.0/33055146_1.0_consents_v1_13-01-2023.zip) |   |   |   |   |   |   |   |
