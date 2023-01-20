@@ -10,6 +10,7 @@ Id da Organização,Deployment,API,Version,Data
 15138043,Pedido Certificação - consentimento - Brasilcap Capitalização S.A,consents,v1,14-01-2023
 27665207,brasilprev2022,consents,v1,13-01-2023
 28196889,Opus Open Insurance v1,consents,v1,13-01-2023
+32724962,BTG Seguros Open Insurance Auth Server 1.0,consents,v1,18-01-2023
 33055146,1.0,consents,v1,13-01-2023
 33245762,Too Seguros Auth Server 1.0.0,consents,v1,13-01-2023
 34020354,Youse,consents,v1,11-01-2023
@@ -29,12 +30,16 @@ Id da Organização,Deployment,API,Version,Data
 07746953,LuizaSeg-LinaB3-Opin-v.1.0,resources,v1,12-01-2023
 08279191,Cardif-Seguros-LinaB3-Opin-v.1.0,resources,v1,12-01-2023
 13615969,EVIDENCE-PREVIDENCIA-SA-API-RESOURCES-13-JANUARY-2023,resources,v1,13-01-2023
+15138043,Pedido certificação - recurso - Brasilcap Capitalização S.A,resources,v1,19-01-2023
+19449767,BTG Previdencia Open Insurance Auth Server 1.0,resources,v1,18-01-2023
 27665207,brasilprev2022,resources,v1,12-01-2023
 28196889,Opus Open Insurance v1,resources,v1,12-01-2023
+32724962,BTG Seguros Open Insurance Auth Server 1.0,resources,v1,18-01-2023
 33245762,Too Seguros Auth Server 1.0.0,resources,v1,13-10-2023
 38155804,Caixa Capitalização Auth Server v1.0.0,resources,v1,13-01-2023
 42283770,Icatu Seguros Auth Server v1.0.0,resources,v1,13-01-2023
 44187990,Darwin-LinaB3-Opin-v.1.0,resources,v1,12-01-2023
 61100145," IndianaSeguros",resources,v1,12-01-2023
+61383493,Sompo OPIN v1,resources,v1,19-01-2023
 61550141,LibertySeguros,resources,v1,12-01-2023
 87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-API-13-JANUARY-2023,resources,v1,13-01-2023
