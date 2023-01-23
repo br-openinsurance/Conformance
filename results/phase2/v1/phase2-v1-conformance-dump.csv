@@ -8,11 +8,13 @@ Id da Organização,Deployment,API,Version,Data
 08279191,Cardif-Seguros-LinaB3-Opin-v.1.0,consents,v1,13-01-2023
 13615969,EVIDENCE-PREVIDENCIA-SA-CONSENTS-13-JANUARY-2023,consents,v1,16-01-2023
 15138043,Pedido Certificação - consentimento - Brasilcap Capitalização S.A,consents,v1,14-01-2023
+19449767,BTG Previdencia Open Insurance Auth Server 1.0,consents,v1,20-01-2023
 27665207,brasilprev2022,consents,v1,13-01-2023
 28196889,Opus Open Insurance v1,consents,v1,13-01-2023
 32724962,BTG Seguros Open Insurance Auth Server 1.0,consents,v1,18-01-2023
 33055146,1.0,consents,v1,13-01-2023
 33245762,Too Seguros Auth Server 1.0.0,consents,v1,13-01-2023
+34020354,Caixa Seguradora,consents,v1,11-01-2023
 34020354,Youse,consents,v1,11-01-2023
 38155804,Caixa Capitalização Auth Server v1.0.0,consents,v1,13-01-2023
 42283770,Icatu Seguros Auth Server v1.0.0,consents,v1,13-01-2023
@@ -20,6 +22,7 @@ Id da Organização,Deployment,API,Version,Data
 61100145," IndianaSeguros",consents,v1,12-01-2023
 61383493,Sompo OPIN v1,consents,v1,13-01-2023
 61550141,LibertySeguros,consents,v1,12-01-2023
+61573796,Nexus for Open Insurance as of December 2022,consents,v1,13-01-2023
 87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-API-13-JANUARY-2023,consents,v1,17-01-2023
 92751213,Previsul,consents,v1,11-01-2023
 01582075,Rio Grande Seguradora Auth Server v1.0.0,resources,v1,13-01-2023
