@@ -26,9 +26,12 @@ Id da Organização,Deployment,API,Version,Data
 61100145," IndianaSeguros",consents,v1,12-01-2023
 61383493,Sompo OPIN v1,consents,v1,13-01-2023
 61550141,LibertySeguros,consents,v1,12-01-2023
+61557039,CIAM consent V.1.0 Janeiro 2023,consents,v1,25-01-2023
 61573796,Nexus for Open Insurance as of December 2022,consents,v1,13-01-2023
 87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-API-13-JANUARY-2023,consents,v1,17-01-2023
 92751213,Previsul,consents,v1,11-01-2023
+96348677,OpenInsurance v1.0,consents,v1,24-01-2023
+96348677,OpenInsurance v1.0,consents,v1,25-01-2023
 99999999,dummy deployment,financial-risk,v1,23-01-2023
 99999999,dummy deployment,patrimonial,v1,23-01-2023
 99999999,dummy deployment,personal,v1,23-01-2023
@@ -53,5 +56,8 @@ Id da Organização,Deployment,API,Version,Data
 61100145," IndianaSeguros",resources,v1,12-01-2023
 61383493,Sompo OPIN v1,resources,v1,19-01-2023
 61550141,LibertySeguros,resources,v1,12-01-2023
+61557039,CIAM resource V.1.0 Janeiro 2023,resources,v1,25-01-2023
 87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-API-13-JANUARY-2023,resources,v1,13-01-2023
+96348677,OpenInsurance v1.0,resources,v1,24-01-2023
+96348677,OpenInsurance v1.0,resources,v1,25-01-2023
 99999999,dummy deployment,responsibility,v1,23-01-2023
