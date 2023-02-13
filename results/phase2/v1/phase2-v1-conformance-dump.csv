@@ -25,7 +25,9 @@ Id da Organização,Deployment,API,Version,Data
 38155804,Caixa Capitalização Auth Server v1.0.0,consents,v1,13-01-2023
 42283770,Icatu Seguros Auth Server v1.0.0,consents,v1,13-01-2023
 44187990,Darwin-LinaB3-Opin-v.1.0,consents,v1,12-01-2023
+61074175,MAPFRE Transmissor 1.0,consents,v1,07-02-2023
 61100145," IndianaSeguros",consents,v1,12-01-2023
+61198164,Open Insurance Brazil v1.0,consents,v1,31-01-2023
 61383493,Sompo OPIN v1,consents,v1,13-01-2023
 61550141,LibertySeguros,consents,v1,12-01-2023
 61557039,CIAM consent V.1.0 Janeiro 2023,consents,v1,25-01-2023
@@ -34,6 +36,7 @@ Id da Organização,Deployment,API,Version,Data
 92751213,Previsul,consents,v1,11-01-2023
 96348677,OpenInsurance v1.0,consents,v1,24-01-2023
 99999999,dummy deployment,financial-risk,v1,23-01-2023
+61074175,MAPFRE Transmissor 1.0,patrimonial,v1,07-02-2023
 99999999,dummy deployment,patrimonial,v1,23-01-2023
 99999999,dummy deployment,personal,v1,23-01-2023
 01582075,Rio Grande Seguradora Auth Server v1.0.0,resources,v1,13-01-2023
@@ -57,6 +60,7 @@ Id da Organização,Deployment,API,Version,Data
 38155804,Caixa Capitalização Auth Server v1.0.0,resources,v1,13-01-2023
 42283770,Icatu Seguros Auth Server v1.0.0,resources,v1,13-01-2023
 44187990,Darwin-LinaB3-Opin-v.1.0,resources,v1,12-01-2023
+61074175,MAPFRE Transmissor 1.0,resources,v1,07-02-2023
 61100145," IndianaSeguros",resources,v1,12-01-2023
 61383493,Sompo OPIN v1,resources,v1,19-01-2023
 61550141,LibertySeguros,resources,v1,12-01-2023
