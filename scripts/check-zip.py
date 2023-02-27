@@ -20,13 +20,13 @@ def main(argv = None):
     api_list = args.apis
     version  = args.version
     directories = [f"./submissions/functional/{api}/{version}" for api in api_list]
+    possible_appends = {'RL', 'CR', 'CC', 'RNRO', 'GB', 'LC', 'RE', 'AB', 'RD', 'GE'}
 
     wrong_zips = []
     for api, directory in zip(api_list, directories):
-        pattern = re.compile(r"^\d{8}_.+_(?P<api>[A-Za-z-]+)_v[12](-OL)?_(0[1-9]|[12]\d|3[01])-(0[1-9]|1[012])-(20\d\d).(zip|ZIP)$")
+        pattern = re.compile(r"^\d{8}_.+_(?P<api>[A-Za-z-]+)_v[12](?P<appends>(-[A-Z]{2,4})*)_(0[1-9]|[12]\d|3[01])-(0[1-9]|1[012])-(20\d\d).(zip|ZIP)$")
         for file in listdir(directory):
-            m = pattern.match(file)
-            if (m is None or (m.group('api') != api)) and file != ".DS_Store":
+            if check_file(api, file, pattern, possible_appends):
                 wrong_zips.append(file)
 
     if len(wrong_zips):
@@ -34,6 +34,20 @@ def main(argv = None):
         return 1
         
     return 0
+
+
+def check_file(api, file, pattern, possible_appends):
+    m = pattern.match(file)
+    if file == '.DS_Store':
+        return False
+    if m is None or m.group('api') != api:
+        return True
+    if m.group('appends') != '':
+        appends_list = m.group('appends').split('-')[1:]
+        appends_set = set(appends_list)
+        if len(appends_list) != len(appends_set) or not appends_set.issubset(possible_appends):
+           return True
+    return False
 
 
 if __name__ == '__main__':
