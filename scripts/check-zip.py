@@ -40,6 +40,8 @@ def check_file(api, file, pattern, possible_appends):
     m = pattern.match(file)
     if file == '.DS_Store':
         return False
+    if len(file.split('_')) > 5:
+        return True
     if m is None or m.group('api') != api:
         return True
     if m.group('appends') != '':
