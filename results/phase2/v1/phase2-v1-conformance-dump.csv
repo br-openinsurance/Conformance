@@ -1,5 +1,7 @@
 Id da Organização,Deployment,API,Version,Data
 99999999,dummy deployment,acceptance-and-branches-abroad,v1,23-01-2023
+11521976,AUSTRAL SEGURADORA,business,v1,02-03-2023
+28196889,Opus Open Insurance v1,business,v1,24-02-2023
 32724962,BTG Pactual Seguros OPIN v1.0.0,business,v1,26-02-2023
 33245762,Too Seguros Auth Server 1.0.0,business,v1,14-02-2023
 34020354,Youse,business,v1,01-03-2023
@@ -13,6 +15,7 @@ Id da Organização,Deployment,API,Version,Data
 03730204,Caixa Vida e Previdência S.A.,consents,v1,17-02-2023
 07746953,LuizaSeg-LinaB3-Opin-v.1.0,consents,v1,17-01-2023
 08279191,Cardif-Seguros-LinaB3-Opin-v.1.0,consents,v1,13-01-2023
+11521976,AUSTRAL SEGURADORA,consents,v1,23-02-2023
 13615969,EVIDENCE-PREVIDENCIA-SA-CONSENTS-13-JANUARY-2023,consents,v1,16-01-2023
 15138043,Pedido Certificação - consentimento - Brasilcap Capitalização S.A,consents,v1,14-01-2023
 19449767,BTG Previdencia Open Insurance Auth Server 1.0,consents,v1,20-01-2023
@@ -46,6 +49,7 @@ Id da Organização,Deployment,API,Version,Data
 92751213,Previsul,consents,v1,11-01-2023
 96348677,OpenInsurance v1.0,consents,v1,24-01-2023
 99999999,dummy deployment,financial-risk,v1,23-01-2023
+28196889,Opus Open Insurance v1 4.1.43,patrimonial,v1-RL,24-02-2023
 33245762,Too Seguros Auth Server 1.0.0,patrimonial,v1-RL-CR-CC-RNRO-GB-LC-RE-AB-RD-GE,24-02-2023
 34020354,Caixa Seguradora,patrimonial,v1-RL,04-01-2023
 61074175,MAPFRE Transmissor 1.0,patrimonial,v1,07-02-2023
