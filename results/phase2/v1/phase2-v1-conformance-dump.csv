@@ -2,21 +2,25 @@ Id da Organização,Deployment,API,Version,Data
 99999999,dummy deployment,acceptance-and-branches-abroad,v1,23-01-2023
 01704513,SulAmérica-Seguros-B3-Lina-Opin-v1.0,business,v1,01-03-2023
 01704513,SulAmérica-Seguros-B3-Lina-Opin-v1.0,business,v1,28-02-2023
+03209092,SANTANDER-CAPITALIZACAO-SA-API-CUSTOMER-BUSINESS-01-MAR-2023,business,v1,01-03-2023
 03546261,Cardif-Vida-B3-Lina-Opin-v1.0,business,v1,01-03-2023
 03546261,Cardif-Vida-B3-Lina-Opin-v1.0,business,v1,28-02-2023
 07746953,LuizaSeg-Vida-B3-Lina-Opin-v1.0,business,v1,28-02-2023
 08279191,Cardif-Garantias-B3-Lina-Opin-v1,business,v1,01-03-2023
 11521976,AUSTRAL SEGURADORA,business,v1,02-03-2023
 13615969,EVIDENCE-PREVIDENCIA-SA-API-CUSTOMER-BUSINESS-01-MAR-2023,business,v1,01-03-2023
+15138043,Brasilcap Capitalização OpinInsurance v1,business,v1,13-03-2023
 18096627,HDI-Global-B3-Lina-Opin-v1,business,v1,01-03-2023
 28196889,Opus Open Insurance v1,business,v1,24-02-2023
 30617319,Santander-Auto-B3-Lina-Opin-v1,business,v1,01-03-2023
 32724962,BTG Pactual Seguros OPIN v1.0.0,business,v1,26-02-2023
+33055146,1.0,business,v1,16-03-2023
 33061813,prudential-B3-Lina-Opin-v1,business,v1,01-03-2023
 33245762,Too Seguros Auth Server 1.0.0,business,v1,14-02-2023
 34020354,Youse,business,v1,01-03-2023
 61383493,Sompo OPIN v1,business,v1,01-03-2023
 87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-MARCA-ZURICH-SANTANDER-PREVIDENCIA-API-CUSTOMER-BUSINES-01-MAR-2023,business,v1,28-02-2023
+87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-MARCA-ZURICH-SANTANDER-SEGUROS-API-CUSTOMER-BUSINES-01-MAR-2023,business,v1,28-02-2023
 92751213,Previsul,business,v1,04-01-2023
 01582075,Rio Grande Seguradora Auth Server v1.0.0,consents,v1,13-01-2023
 01599296,CNPCapitalizacao,consents,v1,20-01-2023
@@ -62,19 +66,25 @@ Id da Organização,Deployment,API,Version,Data
 92751213,Previsul,consents,v1,11-01-2023
 96348677,OpenInsurance v1.0,consents,v1,24-01-2023
 99999999,dummy deployment,financial-risk,v1,23-01-2023
+08279191,Cardif-Garantias-B3-Lina-Opin-v1,patrimonial,v1-RL-CR-CC-RNRO-GB-LC-RE-AB-RD-GE,15-03-2023
 28196889,Opus Open Insurance v1 4.1.43,patrimonial,v1-RL,24-02-2023
+29980158,HDI-Seguros-B3-Lina-Opin-v1,patrimonial,v1-RL-CR-CC-RNRO-GB-LC-RE-AB-RD-GE,15-03-2023
+33055146,1.0,patrimonial,v1-RL,16-03-2023
 33245762,Too Seguros Auth Server 1.0.0,patrimonial,v1-RL-CR-CC-RNRO-GB-LC-RE-AB-RD-GE,24-02-2023
 34020354,Caixa Seguradora,patrimonial,v1-RL,04-01-2023
 61074175,MAPFRE Transmissor 1.0,patrimonial,v1,07-02-2023
 61074175,MAPFRE Transmissor 1.0,patrimonial,v1,30-01-2023
 61383493,Sompo OPIN v1 Atenciosamente,patrimonial,v1,01-03-2023
+61550141,LibertySeguros Patrimonial v1,patrimonial,v1,08-03-2023
 87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-MARCA-ZURICH-SANTANDER-SEGUROS-API-PATRIMONIAL,patrimonial,v1,28-02-2023
 92751213,Previsul,patrimonial,v1-RL,04-01-2023
 01582075,Rio Grande Seguradora Auth Server v1.0.0,personal,v1,23-02-2023
 01599296,CNPCapitalizacao,personal,v1,01-03-2023
 01704513,SulAmérica-Seguros-B3-Lina-Opin-v1.0,personal,v1,28-02-2023
+03209092,SANTANDER-CAPITALIZACAO-SA-API-CUSTOMER-PERSONAL-01-MAR-2023,personal,v1,28-02-2023
 03546261,Cardif-Vida-B3-Lina-Opin-v1.0,personal,v1,28-02-2023
 07746953,LuizaSeg-Vida-B3-Lina-Opin-v1.0,personal,v1,28-03-2022
+11521976,AUSTRAL SEGURADORA,personal,v1,16-03-2023
 13615969,EVIDENCE-PREVIDENCIA-SA-API-CUSTOMER-PERSONAL-01-MAR-2023,personal,v1,28-02-2023
 15138043,Brasilcap Capitalização OpinInsurance v1,personal,v1,28-02-2023
 27665207,brasilprev2022 PersonalData,personal,v1,01-03-2023
@@ -86,6 +96,7 @@ Id da Organização,Deployment,API,Version,Data
 42283770,Icatu Seguros Auth Server v1.0.0,personal,v1,01-03-2023
 44187990,Darwin-B3-Lina-Opin-v1.0,personal,v1,28-02-2023
 61100145,IndianaSeguros-CustomerPersonal-v1,personal,v1,08-03-2023
+61383493,Sompo OPIN v1,personal,v1,01-03-2023
 87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-MARCA-ZURICH-SANTANDER-PREVIDENCIA-API-CUSTOMER-PERSONAL-01-MAR-2023,personal,v1,28-02-2023
 87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-MARQUE-ZURICH-SANTANDER-SEGUROS-API-CUSTOMER-PERSONAL-01-MAR-2023,personal,v1,28-02-2023
 92751213,Previsul,personal,v1,06-03-2023
