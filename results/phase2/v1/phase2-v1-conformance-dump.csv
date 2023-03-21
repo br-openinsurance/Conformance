@@ -72,11 +72,11 @@ Id da Organização,Deployment,API,Version,Data
 33055146,1.0,patrimonial,v1-RL,16-03-2023
 33245762,Too Seguros Auth Server 1.0.0,patrimonial,v1-RL-CR-CC-RNRO-GB-LC-RE-AB-RD-GE,24-02-2023
 34020354,Caixa Seguradora,patrimonial,v1-RL,04-01-2023
-61074175,MAPFRE Transmissor 1.0,patrimonial,v1,07-02-2023
-61074175,MAPFRE Transmissor 1.0,patrimonial,v1,30-01-2023
-61383493,Sompo OPIN v1 Atenciosamente,patrimonial,v1,01-03-2023
-61550141,LibertySeguros Patrimonial v1,patrimonial,v1,08-03-2023
-87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-MARCA-ZURICH-SANTANDER-SEGUROS-API-PATRIMONIAL,patrimonial,v1,28-02-2023
+61074175,MAPFRE Transmissor 1.0,patrimonial,v1-GE,30-01-2023
+61074175,MAPFRE Transmissor 1.0,patrimonial,v1-RL-CR-CC-RNRO-GB-LC-RE-AB-RD-GE,07-02-2023
+61383493,Sompo OPIN v1,patrimonial,v1-RL,01-03-2023
+61550141,LibertySeguros Patrimonial v1,patrimonial,v1-RL-CR-CC-RNRO-LC-RE-RD-GE,08-03-2023
+87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-MARCA-ZURICH-SANTANDER-SEGUROS-API-PATRIMONIAL,patrimonial,v1-RL,28-02-2023
 92751213,Previsul,patrimonial,v1-RL,04-01-2023
 01582075,Rio Grande Seguradora Auth Server v1.0.0,personal,v1,23-02-2023
 01599296,CNPCapitalizacao,personal,v1,01-03-2023
