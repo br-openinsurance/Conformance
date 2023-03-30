@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 	"log"
-	"strconv"
 
 	"github.com/br-openinsurance/Conformance/tree/main/conformance_table_generator/utils"
 )
@@ -15,31 +14,49 @@ var (
 
 func init() {
 	flag.StringVar(&Target, "t", "phase2", "Target Table")
-	flag.StringVar(&Version, "v", "1", "API Version")
+	flag.StringVar(&Version, "v", "latest", "API Versions")
 	flag.Parse()
 }
 
-// go run main.go -t <phaseNo> -v <versionNo>
+// go run main.go -t <phaseNo> -v <versionGroup>
 // example
-// go run main.go -t phase2 -v 2
+// go run main.go -t phase2 -v first
 
 // Add a .env file containing your github access token to the root of this project
 // GITHUB_AT=ghp_...
 func main() {
 	var apis []string
 
-	if Target == "phase2" || Target == "all" {
-		apis = []string{
-			"acceptance-and-branches-abroad", "business",
-			"consents", "financial-risk",
-			"patrimonial", "personal",
-			"resources", "responsibility",
+	switch Target {
+	case "phase2":
+		switch Version {
+		case "latest":
+			apis = []string{
+				"acceptance-and-branches-abroad_v1.2", "business_v1.3",
+				"consents_v2.2", "financial-risk_v1.2",
+				"patrimonial_v1.3", "personal_v1.3",
+				"resources_v1.2", "responsibility_v1.2",
+			}
+		case "first":
+			apis = []string{
+				"acceptance-and-branches-abroad_v1.0", "business_v1.0",
+				"consents_v1.0", "financial-risk_v1.0",
+				"patrimonial_v1.0", "personal_v1.0",
+				"resources_v1.0", "responsibility_v1.0",
+			}
+		default:
+			log.Fatalf("Invalid version entered: %s. Possible values: first, latest", Version)
 		}
-
-		utils.GenerateTable(apis, "phase2", Version)
+	case "phase3":
+		switch Version {
+		case "latest":
+			apis = []string{ "endorsement_v1.1", "claim-notification_v1.2" }
+		default:
+			log.Fatalf("Invalid version entered: %s. Possible values: latest", Version)
+		}
+	default:
+		log.Fatalf("Invalid target entered: %s. Possible values: phase2, phase3", Target)
 	}
 
-	if _, err := strconv.Atoi(Version); err != nil {
-		log.Fatalf("Invalid version entered: %s. Error: %s", Version, err)
-	}
+	utils.GenerateTable(apis, Target, Version)
 }

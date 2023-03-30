@@ -7,23 +7,26 @@ import (
 	"github.com/br-openinsurance/Conformance/tree/main/conformance_table_generator/models"
 )
 
-func GenerateTable(apis []string, phase string, version string) {
+func GenerateTable(apisList []string, phase string, version string) {
 	// import files
 	repositoryUrl := "https://api.github.com/repos/br-openinsurance/Conformance/git/trees/main?recursive=1"
 	submissionFiles := importSubmittedFiles(repositoryUrl)
 
 	// filter files by chosen apis and version
-	filteredFiles := filterFilesByApisAndVersion(submissionFiles, apis, version)
+	filteredFiles := filterFilesByApisAndVersion(submissionFiles, apisList)
 
 	// create table and dump
 	tableHeaders := []string {"Organização", "Deployment"}
-	tableHeaders = append(tableHeaders, apis...)
+	tableHeaders = append(tableHeaders, apiTableHeaders(apisList)...)
 	table := [][]string {tableHeaders}
 
 	dumpHeaders := []string {"Id da Organização", "Deployment", "API", "Version", "Data"}
 	dump := [][]string {dumpHeaders}
 
 	organisationsMap := makeOrganisationsMap(false)
+
+	// split apisList into apis and versions
+	apis, _ := splitApisList(apisList)
 
 	for _, file := range filteredFiles {
 		fileSplit := strings.Split(file, "/")
@@ -34,8 +37,10 @@ func GenerateTable(apis []string, phase string, version string) {
 		deploymentName := fileNameSplit[1]
 		api := fileNameSplit[2]
 		version := fileNameSplit[3]
-		date := fileNameSplit[4]
-		date = date[:len(date) - 4]
+		if len(version) == 2 {
+			version += ".0"
+		}
+		date := strings.Split(fileNameSplit[4], ".")[0]
 
 		zipUrl := strings.Replace(repositoryUrl, "api.github.com/repos", "github.com", 1)
 		zipUrl = strings.Replace(zipUrl, "git/trees/main?recursive=1", "blob/main/" + file, 1)
@@ -62,15 +67,16 @@ func GenerateTable(apis []string, phase string, version string) {
 		}
 	}
 
-	dumpFileName := fmt.Sprintf("../results/%s/v%s/%s-v%s-conformance-dump.csv", phase, version, phase, version)
+	dumpFileName := fmt.Sprintf("../results/%s/%s/%s-%s-conformance-dump.csv", phase, version, phase, version)
 	exportTable(dump, dumpFileName)
 
-	tableFileName := fmt.Sprintf("../results/%s/v%s/%s-v%s-conformance-table.csv", phase, version, phase, version)
+	tableFileName := fmt.Sprintf("../results/%s/%s/%s-%s-conformance-table.csv", phase, version, phase, version)
 	exportTable(table, tableFileName)
 }
 
-func filterFilesByApisAndVersion(submissionFiles models.GithubTree, apis []string, version string) []string {
+func filterFilesByApisAndVersion(submissionFiles models.GithubTree, apisList []string) []string {
 	var filteredFiles []string
+	apis, versions := splitApisList(apisList)
 
 	for _, file := range submissionFiles {
 		filePath := file.Path
@@ -78,12 +84,27 @@ func filterFilesByApisAndVersion(submissionFiles models.GithubTree, apis []strin
 		fileApi := fileSplit[2]
 		fileVersion := fileSplit[3]
 
-		if findApiIndex(apis, fileApi) != -1 && strings.Split(fileVersion, ".")[0] == version {
+		apiIndex := findApiIndex(apis, fileApi)
+
+		if apiIndex != -1 && fileVersion == versions[apiIndex][1:] + ".0" {
 			filteredFiles = append(filteredFiles, filePath)
 		}
 	}
 
 	return filteredFiles
+}
+
+func splitApisList(apisList []string) ([]string, []string) {
+	var apis []string
+	var versions []string
+
+	for _, api := range apisList {
+		apiSplit := strings.Split(api, "_")
+		apis = append(apis, apiSplit[0])
+		versions = append(versions, apiSplit[1])
+	}
+
+	return apis, versions
 }
 
 func findApiIndex(apis []string, api string) int {
@@ -93,4 +114,17 @@ func findApiIndex(apis []string, api string) int {
 		}
 	}
 	return -1
+}
+
+func apiTableHeaders(apisList []string) []string {
+	var tableHeaders []string
+	for _, apiElement := range apisList {
+		apiSplit := strings.Split(apiElement, "_")
+		api := apiSplit[0]
+		version := apiSplit[1]
+
+		header := strings.ReplaceAll(api, "-", " ") + " " + version
+		tableHeaders = append(tableHeaders, header)
+	}
+	return tableHeaders
 }
