@@ -42,7 +42,13 @@ func importSubmittedFiles(repositoryUrl string) models.GithubTree {
 	var filteredResults models.GithubTree
 	for _, file := range respBody.Tree {
 		filePath := file.Path
-		if strings.Split(filePath, "/")[0] == "submissions" && filePath[len(filePath) - 3:] == "zip" {
+		filePathSplit := strings.Split(filePath, "/")
+
+		isInSubmissionsFolder := filePathSplit[0] == "submissions"
+		isTheCorrectLenght := len(filePathSplit) == 5
+		isTheCorrectExtension := filePath[len(filePath) - 3:] == "zip" || filePath[len(filePath) - 4:] == "json"
+
+		if isInSubmissionsFolder && isTheCorrectLenght  && isTheCorrectExtension {
 			filteredResults = append(filteredResults, file)
 		}
 	}

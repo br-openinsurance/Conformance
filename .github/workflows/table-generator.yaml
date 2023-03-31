@@ -17,15 +17,25 @@ jobs:
       with:
         go-version: 1.18
 
-    - name: Run conformance table generator
+    - name: Run conformance table generator for latest versions of phase 2
       run: |
         cd conformance_table_generator/
-        go run main.go -t phase2 -v 1
+        go run main.go -t phase2 -v latest
+
+    - name: Run conformance table generator for first versions of phase 2
+      run: |
+        cd conformance_table_generator/
+        go run main.go -t phase2 -v first
     
-    - name: Run export data
+    - name: Run export data for latest versions of phase 2
       run: |
         cd export_data/
-        go run main.go -t phase2 -v 1
+        go run main.go -t phase2 -v latest
+
+    - name: Run export data for first versions of phase 2
+      run: |
+        cd export_data/
+        go run main.go -t phase2 -v first
     
     - name: Get current date
       id: date

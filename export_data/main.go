@@ -10,17 +10,9 @@ import (
 	"github.com/br-openinsurance/Conformance/tree/main/export_data/utils"
 )
 
-/*
- * To generate all tables    - go run main.go
- * To generate phase 2 table - go run main.go -t phase2
- *
- * Additionally, by default, only version 1 APIs are retrieved
- * If you want another version, you'll have to use the option -v in the command line
- * Example, let's say you want phase 2 version 2 table:
- * go run main.go -t phase2 -v 2
- * 
- * It's important to note that you should only include the major version
- */
+// go run main.go -t <phaseNo> -v <versionGroup>
+// example
+// go run main.go -t phase2 -v first
 
 var (
 	Target            string
@@ -28,30 +20,27 @@ var (
 )
 
 func init() {
-	flag.StringVar(&Target, "t", "all", "Target Table")
-	flag.StringVar(&Version, "v", "1", "API Version")
+	flag.StringVar(&Target, "t", "phase2", "Target Table")
+	flag.StringVar(&Version, "v", "latest", "API Versions")
 	flag.Parse()
 }
 
 func main() {
-	// Versions that are allowed
-	allowedVersions := []string {"1", "2"}
-	if !utils.Contains(allowedVersions, Version) {
-		log.Fatal("Version chosen is not allowed: ", Version)
-	}
 
-	resultsPathCsv := fmt.Sprintf("../results/%s/v%s/%s-v%s-data.csv", Target, Version, Target, Version)
-	resultsPathMd  := fmt.Sprintf("../results/%s/v%s/%s-v%s-data.md" , Target, Version, Target, Version)
+	resultsPathCsv := fmt.Sprintf("../results/%s/%s/%s-%s-data.csv", Target, Version, Target, Version)
+	resultsPathMd  := fmt.Sprintf("../results/%s/%s/%s-%s-data.md" , Target, Version, Target, Version)
 	// It's recommended to use semicolon as separator as some organisations might have comma in their names
 	separator   := ';'
 	var apiFamilyTypes []string
+	var apiVersions    []string
 	var apiHeaderNames []string
 	headers := []string {
 		"Conglomerado",
 		"Marca",
 	}
 
-	if Target == "phase2" || Target == "all" {
+	switch Target {
+	case "phase2":
 		apiFamilyTypes = []string {
 			"consents",
 			"customers-personal",
@@ -62,32 +51,57 @@ func main() {
 			"patrimonial",
 			"responsibility",
 		}
-	
-		apiHeaderNames = []string {
-			"Consentimento API",
-			"Dados Cadastrais (PF) API",
-			"Dados Cadastrais (PJ) API",
-			"Resources API",
-			"Aceitação e Sucursal no exterior API",
-			"Riscos Financeiros API",
-			"Patrimonial API",
-			"Responsabilidade API",
+
+		switch Version {
+		case "latest":
+			apiVersions = []string { "2.2", "1.3", "1.3", "1.2", "1.2", "1.2", "1.3", "1.2" }
+		case "first":
+			apiVersions = []string { "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0" }
+		default:
+			log.Fatalf("Invalid version entered: %s. Possible values: first, latest", Version)
 		}
 
-		exportData(apiFamilyTypes, apiHeaderNames, Version, resultsPathCsv, separator)
+		apiHeaderNames = []string {
+			"Consentimento API versão " + apiVersions[0],
+			"Dados Cadastrais (PF) API versão " + apiVersions[1],
+			"Dados Cadastrais (PJ) API versão " + apiVersions[2],
+			"Resources API versão " + apiVersions[3],
+			"Aceitação e Sucursal no exterior API versão " + apiVersions[4],
+			"Riscos Financeiros API versão " + apiVersions[5],
+			"Patrimonial API versão " + apiVersions[6],
+			"Responsabilidade API versão " + apiVersions[7],
+		}
+	case "phase3":
+		apiFamilyTypes = []string { "endorsement", "claim-notification" }
 
-		// Filter entries that are duplicated
-		utils.FilterDuplicateEntries(resultsPathCsv, separator)
+		switch Version {
+		case "latest":
+			apiVersions = []string { "1.1", "1.2" }
+		default:
+			log.Fatalf("Invalid version entered: %s. Possible values: latest", Version)
+		}
 
-		// Specifically for phase 2, we should filter out entries that do not have certification for consents API
-		utils.FilterEntriesWithoutConsents(resultsPathCsv, separator)
-
-		headers = append(headers, apiHeaderNames...)
-		utils.GenerateFromCsv(resultsPathCsv, resultsPathMd, headers, separator)
+		apiHeaderNames = []string { 
+			"Endosso API versão " + apiVersions[0],
+			"Aviso de Sinistro API versão " + apiVersions[1],
+		}
+	default:
+		log.Fatalf("Invalid target entered: %s. Possible values: phase2, phase3", Target)
 	}
+
+	exportData(apiFamilyTypes, apiHeaderNames, apiVersions, resultsPathCsv, separator)
+
+	// Filter entries that are duplicated
+	utils.FilterDuplicateEntries(resultsPathCsv, separator)
+
+	// Specifically for phase 2, we should filter out entries that do not have certification for consents API
+	utils.FilterEntriesWithoutConsents(resultsPathCsv, separator)
+
+	headers = append(headers, apiHeaderNames...)
+	utils.GenerateFromCsv(resultsPathCsv, resultsPathMd, headers, separator)
 }
 
-func exportData(apiFamilyTypes []string, apiHeaderNames []string, version string, fileName string, separator rune) {
+func exportData(apiFamilyTypes []string, apiHeaderNames []string, apiVersions []string, fileName string, separator rune) {
 	// Creating the header for the table
 	tableHeader := []string{"Conglomerado", "Marca"}
 	tableHeader = append(tableHeader, apiHeaderNames...)
@@ -120,19 +134,20 @@ func exportData(apiFamilyTypes []string, apiHeaderNames []string, version string
 	// Writing data to the file
 	for _, participant := range participants {
 		for _, server := range participant.AuthorisationServers {
-			row_elements := make(map[string]string)
+			rowElements := make(map[string]string)
 			// We look for the parent organisation in order to get the conglomerate
 			if participant.ParentOrganisationReference != "" {
-				row_elements["Conglomerado"] = organisations[participant.ParentOrganisationReference]
+				rowElements["Conglomerado"] = organisations[participant.ParentOrganisationReference]
 			} else {
-				row_elements["Conglomerado"] = participant.RegisteredName
+				rowElements["Conglomerado"] = participant.RegisteredName
 			}
-			row_elements["Marca"] = server.CustomerFriendlyName
+			rowElements["Marca"] = server.CustomerFriendlyName
 
 			// Iterate through all servers
 			for _, resource := range server.APIResources {
 				// The family type must be in apiFamilyTypes and there must be an APICertificationURI
-				if utils.Contains(apiFamilyTypes, resource.APIFamilyType) && resource.APICertificationURI != nil && utils.IsRightVersion(resource.APIVersion, version) {
+				apiIndex := utils.FindIndex(apiFamilyTypes, resource.APIFamilyType)
+				if apiIndex != -1 && resource.APICertificationURI != nil && utils.IsRightVersion(resource.APIVersion, apiVersions[apiIndex]) {
 					// Search for the date in the zip containing the certification
 					certDate := utils.DateFromZipName(fmt.Sprintf("%v", resource.APICertificationURI))
 					if certDate == "" {
@@ -142,7 +157,7 @@ func exportData(apiFamilyTypes []string, apiHeaderNames []string, version string
 					if resource.CertificationStartDate != nil {
 						certDate = utils.ConvertDate(fmt.Sprintf("%v", resource.CertificationStartDate))
 					}
-					row_elements[resource.APIFamilyType] = fmt.Sprintf(
+					rowElements[resource.APIFamilyType] = fmt.Sprintf(
 						"[%s](%s)",
 						certDate,
 						resource.APICertificationURI,
@@ -151,10 +166,10 @@ func exportData(apiFamilyTypes []string, apiHeaderNames []string, version string
 			}
 
 			row := make([]string, len(apiFamilyTypes) + 2)
-			row[0] = row_elements["Conglomerado"]
-			row[1] = row_elements["Marca"]
+			row[0] = rowElements["Conglomerado"]
+			row[1] = rowElements["Marca"]
 			for i, familyType := range apiFamilyTypes {
-				row[i + 2] = row_elements[familyType]
+				row[i + 2] = rowElements[familyType]
 			}
 
 			if err := writer.Write(row); err != nil {
