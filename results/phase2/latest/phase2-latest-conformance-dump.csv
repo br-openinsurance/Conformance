@@ -3,16 +3,16 @@ Id da Organização,Deployment,API,Version,Data
 99999999,dummy,business,v1.3,03-10-2023
 99999999,dummy,consents,v2.2,03-10-2023
 99999999,dummy,financial-risk,v1.2,03-10-2023
-03502099,Chubb-Seguros-B3-Lina-OPIN-ins-patrimonial-v.1.3.0,patrimonial,v1.3,31-03-2023
-06109373,Insurance Patrimonial,patrimonial,v1.3,06-04-2023
-08279191,Cardif-Gar-B3-Lina-OPIN-ins-patrimonial-v.1.3.0,patrimonial,v1.3,31-03-2023
-11521976,AUSTRAL SEGURADORA CNPJ: 11521976000126,patrimonial,v1.3,31-03-2023
-28196889,Opus Open Insurance v1,patrimonial,v1.3,31-03-2023
-29980158,Insurance Patrimonial v1.3.0,patrimonial,v1.3,03-04-2023
-29980158,Insurance-Patrimonial v1.3.0,patrimonial,v1.3,03-04-2023
-33055146,1.1,patrimonial,v1.3,31-03-2023
-87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-M-2,patrimonial,v1.3,31-03-2023
-87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-M,patrimonial,v1.3,31-03-2023
+03502099,Chubb-Seguros-B3-Lina-OPIN-ins-patrimonial-v.1.3.0,patrimonial,v1.3-RL-CC-CR-RNRO-GB-LC-RE-AB-RD-GE,31-03-2023
+06109373,Insurance Patrimonial,patrimonial,v1.3-RL-CC-CR-RNRO-GB-LC-RE-AB-RD-GE,06-04-2023
+08279191,Cardif-Gar-B3-Lina-OPIN-ins-patrimonial-v.1.3.0,patrimonial,v1.3-RL-CC-CR-RNRO-GB-LC-RE-AB-RD-GE,31-03-2023
+11521976,AUSTRAL SEGURADORA CNPJ: 11521976000126,patrimonial,v1.3-RL,31-03-2023
+28196889,Opus Open Insurance v1,patrimonial,v1.3-RL-CC-CR-RD,31-03-2023
+29980158,Insurance Patrimonial v1.3.0,patrimonial,v1.3-RL-CC-CR-RNRO-GB-LC-RE-AB-RD-GE,03-04-2023
+29980158,Insurance-Patrimonial v1.3.0,patrimonial,v1.3-RL-CC-CR-RNRO-GB-LC-RE-AB-RD-GE,03-04-2023
+33055146,1.1,patrimonial,v1.3-RL,31-03-2023
+87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-M-2,patrimonial,v1.3-RL,31-03-2023
+87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-M,patrimonial,v1.3-CR-LC,31-03-2023
 99999999,dummy,patrimonial,v1.3,03-10-2023
 99999999,dummy,personal,v1.3,03-10-2023
 99999999,dummy,resources,v1.2,03-10-2023
