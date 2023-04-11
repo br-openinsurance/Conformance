@@ -1,10 +1,17 @@
 repos:
   - repo: local
     hooks:
-      - id: check-zip
-        name: Check Zip
+      - id: check-file-names
+        name: Check File Names
         language: python
-        entry: python -m scripts.check-zip
-        args: [1.0.0, acceptance-and-branches-abroad, business, consents, financial-risk, patrimonial, personal, resources, responsibility]
+        entry: python -m scripts.check-file-names
+        args: [acceptance-and-branches-abroad_1.0, acceptance-and-branches-abroad_1.2, business_1.0, business_1.3, claim-notification_1.2, consents_1.0, consents_2.2, endorsement_1.1, financial-risk_1.0, financial-risk_1.2, patrimonial_1.0, patrimonial_1.3, personal_1.0, personal_1.3, resources_1.0, resources_1.2, responsibility_1.0, responsibility_1.2]
+        exclude: ".*"
+        always_run: true
+      - id: check-json-files
+        name: Check Json Files
+        language: python
+        entry: python -m scripts.check-json-files
+        args: [acceptance-and-branches-abroad_1.2, business_1.3, claim-notification_1.2, consents_2.2, endorsement_1.1, financial-risk_1.2, patrimonial_1.3, personal_1.3, resources_1.2, responsibility_1.2]
         exclude: ".*"
         always_run: true

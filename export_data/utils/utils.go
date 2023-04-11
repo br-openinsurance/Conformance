@@ -40,13 +40,13 @@ func ImportData(url string) (models.Participants, error) {
 	return data, nil
 }
 
-func Contains(arr []string, str string) bool {
-	for _, s := range arr {
+func FindIndex(arr []string, str string) int {
+	for i, s := range arr {
 		if s == str {
-			return true
+			return i
 		}
 	}
-	return false
+	return -1
 }
 
 func MakeOrganisationsMap() map[string]string {
@@ -66,7 +66,7 @@ func MakeOrganisationsMap() map[string]string {
 }
 
 func IsRightVersion(apiVersion string, targetVersion string) bool {
-	return strings.Split(apiVersion, ".")[0] == targetVersion
+	return strings.Join(strings.Split(apiVersion, ".")[:2], ".") == targetVersion
 }
 
 // Copied from the main.go file in the root directory

@@ -1,0 +1,2 @@
+| Conglomerado | Marca | Consentimento API versão 2.2 | Dados Cadastrais (PF) API versão 1.3 | Dados Cadastrais (PJ) API versão 1.3 | Resources API versão 1.2 | Aceitação e Sucursal no exterior API versão 1.2 | Riscos Financeiros API versão 1.2 | Patrimonial API versão 1.3 | Responsabilidade API versão 1.2 |
+|---|---|---|---|---|---|---|---|---|---|
