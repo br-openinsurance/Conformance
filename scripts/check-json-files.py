@@ -11,7 +11,7 @@ def validate_json(json_obj, api_version_list):
         return False, 'api field has an invalid value'
     if 'sd' not in json_obj or not re.match(r'^\d+$', json_obj['sd']):
         return False, 'sd field has an invalid value'
-    if 'docusign_id' not in json_obj or not re.match(r'^[A-Z\d]{8}-[A-Z\d]{4}-[A-Z\d]{4}-[A-Z\d]{4}-[A-Z\d]{12}$', json_obj['docusign_id']):
+    if 'docusign_id' not in json_obj or not re.match(r'^[A-Za-z\d]{8}-[A-Za-z\d]{4}-[A-Za-z\d]{4}-[A-Za-z\d]{4}-[A-Za-z\d]{12}$', json_obj['docusign_id']):
         return False, 'docusign_id field has an invalid value'
     if 'test_plan_uri' not in json_obj or not re.match(r'^https://web\.conformance\.directory\.opinbrasil\.com\.br/plan-detail\.html\?.*$', json_obj['test_plan_uri']):
         return False, 'test_plan_uri field has an invalid value'
