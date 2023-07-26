@@ -127,7 +127,7 @@ func GenerateFromCsv(inputFile string, outputFile string, headers []string, sepa
 
 	// Replace headersxs
 	for index, value := range headers {
-		toWrite = strings.Replace(toWrite, strconv.Itoa(index), value, 1)
+		toWrite = strings.Replace(toWrite, " " + strconv.Itoa(index), " " + value, 1)
 	}
 
 	// Write result of table to file
