@@ -32,10 +32,10 @@ func main() {
 		switch Version {
 		case "latest":
 			apis = []string{
-				"acceptance-and-branches-abroad_v1.2", "business_v1.3",
-				"consents_v2.2", "financial-risk_v1.2",
-				"patrimonial_v1.3", "personal_v1.3",
-				"resources_v1.2", "responsibility_v1.2",
+				"acceptance-and-branches-abroad_v1.2", "customers-business_v1.4",
+				"consents_v2.3", "financial-risk_v1.2",
+				"patrimonial_v1.3", "customers-personal_v1.4",
+				"resources_v2.3", "responsibility_v1.2",
 			}
 		case "first":
 			apis = []string{

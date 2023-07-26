@@ -54,7 +54,7 @@ func main() {
 
 		switch Version {
 		case "latest":
-			apiVersions = []string { "2.2", "1.3", "1.3", "1.2", "1.2", "1.2", "1.3", "1.2" }
+			apiVersions = []string { "2.3", "1.4", "1.4", "2.3", "1.2", "1.2", "1.3", "1.2" }
 		case "first":
 			apiVersions = []string { "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0" }
 		default:

@@ -1,7 +1,29 @@
 Id da Organização,Deployment,API,Version,Data
 99999999,dummy,acceptance-and-branches-abroad,v1.2,03-10-2023
-99999999,dummy,business,v1.3,03-10-2023
-99999999,dummy,consents,v2.2,03-10-2023
+06109373,Consents-v2.3,consents,v2.3,25-07-2023
+19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,consents,v2.3,26-07-2023
+33164021,Tokio-Marine---Open-Insurance-Barazil-V1.0.0,consents,v2.3,15-07-2023
+61100145,OpIn-Indiana-Consentsv1.0.0,consents,v2.3,19-07-2023
+61550141,OpIn-Liberty-Consentsv1.0.0,consents,v2.3,19-07-2023
+61557039,Itau-Seguros-Open-Insurance-Brazil-v2.3.0,consents,v2.3,20-07-2023
+61573796,Nexus-for-Open-Insurance-as-of-July-2023,consents,v2.3,20-07-2023
+06109373,Customer-Business-V1.4,customers-business,v1.4,25-07-2023
+19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,customers-business,v1.4,26-07-2023
+33164021,Tokio-Marine---Open-Insurance-Barazil-V1.0.0,customers-business,v1.4,15-07-2023
+38155804,Caixa-Capitalização-Auth-Server-v1.4.0,customers-business,v1.4,21-07-2023
+42283770,Icatu-Seguros-Auth-Server-v1.4.0,customers-business,v1.4,21-07-2023
+61100145,OpIn-Indiana-CustomerBusinesv1.0.0,customers-business,v1.4,19-07-2023
+61550141,OpIn-Liberty-CustomerBusinessv1.0.0,customers-business,v1.4,20-07-2023
+61557039,Itau-Seguros-Open-Insurance-Brazil-v1.4.0,customers-business,v1.4,15-07-2023
+61573796,Nexus-for-Open-Insurance-as-of-July-2023,customers-business,v1.4,20-07-2023
+06109373,Customer-Personal-v1.4,customers-personal,v1.4,25-07-2023
+19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,customers-personal,v1.4,26-07-2023
+33164021,Tokio-Marine---Open-Insurance-Brazil-V1.0.0,customers-personal,v1.4,15-07-2023
+42283770,Icatu-Seguros-Auth-Server-v1.4.0,customers-personal,v1.4,21-07-2023
+61100145,OpIn-Indiana-CustomerPersonalv1.0.0,customers-personal,v1.4,20-07-2023
+61550141,OpIn-Liberty-CustomerPersonalv1.0.0,customers-personal,v1.4,20-07-2023
+61557039,Itau-Seguros-Open-Insurance-Brazil-v1.4.0,customers-personal,v1.4,14-07-2023
+61573796,Nexus-for-Open-Insurance-as-of-July-2023,customers-personal,v1.4,20-07-2023
 99999999,dummy,financial-risk,v1.2,03-10-2023
 03502099,Chubb-Seguros-B3-Lina-OPIN-ins-patrimonial-v.1.3.0,patrimonial,v1.3-RL-CC-CR-RNRO-GB-LC-RE-AB-RD-GE,31-03-2023
 06109373,Insurance Patrimonial,patrimonial,v1.3-RL-CC-CR-RNRO-GB-LC-RE-AB-RD-GE,06-04-2023
@@ -18,6 +40,12 @@ Id da Organização,Deployment,API,Version,Data
 87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-M-2,patrimonial,v1.3-RL,31-03-2023
 87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-M,patrimonial,v1.3-CR-LC,31-03-2023
 99999999,dummy,patrimonial,v1.3,03-10-2023
-99999999,dummy,personal,v1.3,03-10-2023
-99999999,dummy,resources,v1.2,03-10-2023
+06109373,Resources-V2,resources,v2.3,25-07-2023
+19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,resources,v2.3,26-07-2023
+33164021,Tokio-Marine---Open-Insurance-Brazil-V1.0.0,resources,v2.3,15-07-2023
+42283770,Icatu-Seguros-Auth-Server-v1.4.0,resources,v2.3,21-07-2023
+61100145,OpIn-Indiana-Resourcesv1.0.0,resources,v2.3,19-07-2023
+61550141,OpIn-Liberty-Resourcesv1.0.0,resources,v2.3,19-07-2023
+61557039,Itau-Seguros-Open-Insurance-Brazil-v2.3.0,resources,v2.3,20-07-2023
+61573796,Nexus-for-Open-Insurance-as-of-July-2023,resources,v2.3,20-07-2023
 99999999,dummy,responsibility,v1.2,03-10-2023
