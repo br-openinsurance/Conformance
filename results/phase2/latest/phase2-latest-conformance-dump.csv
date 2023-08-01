@@ -2,12 +2,15 @@ Id da Organização,Deployment,API,Version,Data
 99999999,dummy,acceptance-and-branches-abroad,v1.2,03-10-2023
 01582075,Rio-Grande-Seguradora-Auth-Server-v1.4.0,consents,v2.3,28-07-2023
 01599296,CNP-Capitalização-OPIN-V.-1.0,consents,v2.3,27-07-2023
+01704513,SulAmerica-Seguros-de-Pessoas-e-Previdência-SA,consents,v2.3,01-08-2023
 03502099,2fe49d23811e0642219dec360032efab703c4740,consents,v2.3,25-07-2023
 03502099,Chubb-B3-Lina-OPIN-consents-v2.3.0,consents,v2.3,27-07-2023
 06109373,Consents-v2.3,consents,v2.3,25-07-2023
 13615969,EVIDENCE-PREVIDENCIA-SA-1-AUGUST-2023,consents,v2.3,27-07-2023
+15138043,Open-Insurance-Fase-2-v2.3.0,consents,v2.3,01-08-2023
 19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,consents,v2.3,26-07-2023
 24856160,Youse-OPIN-V.-1.0,consents,v2.3,28-07-2023
+28196889,Recertificação-Fase-2---Bloco-1---Consents,consents,v2.3,01-08-2023
 32090920,SANTANDER-CAPITALIZACAO-SA-1-AUGUST-2023,consents,v2.3,27-07-2023
 32724962,BTG-Pactual-Seguros-OPIN-v1.0.0,consents,v2.3,28-07-2023
 33055146,BS---Consents-v2.3.0,consents,v2.3,28-07-2023
@@ -20,6 +23,7 @@ Id da Organização,Deployment,API,Version,Data
 44187990,Darwin-B3-Lina-OPIN-consents-v2.3.0,consents,v2.3,27-07-2023
 61074175,MAPFRE-OP-v1,consents,v2.3,27-07-2023
 61100145,OpIn-Indiana-Consentsv1.0.0,consents,v2.3,19-07-2023
+61198164,Porto-Seguro---Consents-v2.3.0,consents,v2.3,01-08-2023
 61550141,OpIn-Liberty-Consentsv1.0.0,consents,v2.3,19-07-2023
 61557039,Itau-Seguros-Open-Insurance-Brazil-v2.3.0,consents,v2.3,20-07-2023
 61573796,Nexus-for-Open-Insurance-as-of-July-2023,consents,v2.3,20-07-2023
@@ -27,11 +31,14 @@ Id da Organização,Deployment,API,Version,Data
 87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-SA-1-AUGUST-2023,consents,v2.3,27-07-2023
 92751213,COMPANHIA-DE-SEGUROS-PREVIDENCIA-DO-SUL---PREVISUL,consents,v2.3,28-07-2023
 01582075,Rio-Grande-Seguradora-Auth-Server-v1.4.0,customers-business,v1.4,25-07-2023
+01704513,SulAmerica-Seguros-de-Pessoas-e-Previdência-SA,customers-business,v1.4,01-08-2023
 03502099,2fe49d23811e0642219dec360032efab703c4740,customers-business,v1.4,25-07-2023
 03502099,Chubb-B3-Lina-OPIN-customers-personalv1.4.0,customers-business,v1.4,27-07-2023
 06109373,Customer-Business-V1.4,customers-business,v1.4,25-07-2023
 13615969,EVIDENCE-PREVIDENCIA-SA-1-AUGUST-2023,customers-business,v1.4,27-07-2023
+15138043,Open-Insurance-Fase-2-v1.4.0,customers-business,v1.4,01-08-2023
 19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,customers-business,v1.4,26-07-2023
+28196889,Recertificação-Fase-2---Bloco-1---Customer-Busines,customers-business,v1.4,01-08-2023
 32090920,SANTANDER-CAPITALIZACAO-SA-1-AUGUST-2023,customers-business,v1.4,27-07-2023
 32724962,BTG-Pactual-Seguros-OPIN-v1.0.0,customers-business,v1.4,28-07-2023
 33055146,BS---Customer-v.1.4.0,customers-business,v1.4,28-07-2023
@@ -40,8 +47,10 @@ Id da Organização,Deployment,API,Version,Data
 38155804,Caixa-Capitalização-Auth-Server-v1.4.0,customers-business,v1.4,21-07-2023
 42283770,Icatu-Seguros-Auth-Server-v1.4.0,customers-business,v1.4,21-07-2023
 44187990,Darwin-B3-Lina-OPIN-customers-business-v1.4.0,customers-business,v1.4,28-07-2023
+45865343,Opin-Justos-Customer-business-v2.0.0,customers-business,v1.4,01-08-2023
 61074175,MAPFRE-OP-v1,customers-business,v1.4,27-07-2023
 61100145,OpIn-Indiana-CustomerBusinesv1.0.0,customers-business,v1.4,19-07-2023
+61198164,Porto-Seguro---Customer-Business-v1.4.0,customers-business,v1.4,01-08-2023
 61550141,OpIn-Liberty-CustomerBusinessv1.0.0,customers-business,v1.4,20-07-2023
 61557039,Itau-Seguros-Open-Insurance-Brazil-v1.4.0,customers-business,v1.4,15-07-2023
 61573796,Nexus-for-Open-Insurance-as-of-July-2023,customers-business,v1.4,20-07-2023
@@ -49,12 +58,14 @@ Id da Organização,Deployment,API,Version,Data
 87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-SA-1-AUGUST-2023,customers-business,v1.4,27-07-2023
 01582075,Rio-Grande-Seguradora-Auth-Server-v1.4.0,customers-personal,v1.4,25-07-2023
 01599296,CNP-Capitalização-OPIN-V.-1.0,customers-personal,v1.4,27-07-2023
+01704513,SulAmerica-Seguros-de-Pessoas-e-Previdência-SA,customers-personal,v1.4,01-08-2023
 03502099,2fe49d23811e0642219dec360032efab703c4740,customers-personal,v1.4,25-07-2023
 03502099,Chubb-B3-Lina-OPIN-customers-personal-v1.4.0,customers-personal,v1.4,27-07-2023
 06109373,Customer-Personal-v1.4,customers-personal,v1.4,25-07-2023
 13615969,EVIDENCE-PREVIDENCIA-SA-1-AUGUST-2023,customers-personal,v1.4,27-07-2023
 19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,customers-personal,v1.4,26-07-2023
 24856160,Youse-OPIN-V.-1.0,customers-personal,v1.4,28-07-2023
+28196889,Recertificação-Fase-2---Bl-1---Customer-Personal,customers-personal,v1.4,01-08-2023
 32090920,SANTANDER-CAPITALIZACAO-SA-1-AUGUST-2023,customers-personal,v1.4,27-07-2023
 32724962,BTG-Pactual-Seguros-OPIN-v1.0.0,customers-personal,v1.4,28-07-2023
 33055146,BS---Customers-v1.4.0,customers-personal,v1.4,28-07-2023
@@ -64,8 +75,10 @@ Id da Organização,Deployment,API,Version,Data
 38155804,Caixa-Capitalização-Auth-Server-v1.4.0,customers-personal,v1.4,27-07-2023
 42283770,Icatu-Seguros-Auth-Server-v1.4.0,customers-personal,v1.4,21-07-2023
 44187990,Darwin-B3-Lina-OPIN-customers-personal-v1.4.0,customers-personal,v1.4,28-07-2023
+45865343,Opin-Justos-Customer-personal-v2.0.0,customers-personal,v1.4,01-08-2023
 61074175,MAPFRE-OP-v1,customers-personal,v1.4,27-07-2023
 61100145,OpIn-Indiana-CustomerPersonalv1.0.0,customers-personal,v1.4,20-07-2023
+61198164,Porto-Seguro---Customer-Personal-v1.4.0,customers-personal,v1.4,01-08-2023
 61550141,OpIn-Liberty-CustomerPersonalv1.0.0,customers-personal,v1.4,20-07-2023
 61557039,Itau-Seguros-Open-Insurance-Brazil-v1.4.0,customers-personal,v1.4,14-07-2023
 61573796,Nexus-for-Open-Insurance-as-of-July-2023,customers-personal,v1.4,20-07-2023
@@ -75,17 +88,9 @@ Id da Organização,Deployment,API,Version,Data
 99999999,dummy,financial-risk,v1.2,03-10-2023
 03502099,654206608a66d0819b50d8358aa7019f56da8744,patrimonial,v1.3-RL,27-07-2023
 03502099,Chubb-B3-Lina-OPIN-ins-patrimonial-v1.3.0,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,27-07-2023
-03502099,Chubb-Seguros-B3-Lina-OPIN-ins-patrimonial-v.1.3.0,patrimonial,v1.3-RL-CC-CR-RNRO-GB-LC-RE-AB-RD-GE,31-03-2023
-06109373,Insurance Patrimonial,patrimonial,v1.3-RL-CC-CR-RNRO-GB-LC-RE-AB-RD-GE,06-04-2023
 06109373,Patrimonial-V1.3,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,25-07-2023
-07746953,LuizaSeg-B3-Lina-OPIN-ins-patrimonial-v.1.3.0,patrimonial,v1.3-RL-CC-CR-RNRO-GB-LC-RE-AB-RD-GE,31-03-2023
-08279191,Cardif-Gar-B3-Lina-OPIN-ins-patrimonial-v.1.3.0,patrimonial,v1.3-RL-CC-CR-RNRO-GB-LC-RE-AB-RD-GE,31-03-2023
-11521976,AUSTRAL SEGURADORA CNPJ: 11521976000126,patrimonial,v1.3-RL,31-03-2023
 24856160,Youse-OPIN-V.-1.0,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,28-07-2023
-28196889,Opus Open Insurance v1,patrimonial,v1.3-RL-CC-CR-RD,31-03-2023
-29980158,Insurance Patrimonial v1.3.0,patrimonial,v1.3-RL-CC-CR-RNRO-GB-LC-RE-AB-RD-GE,03-04-2023
-29980158,Insurance-Patrimonial v1.3.0,patrimonial,v1.3-RL-CC-CR-RNRO-GB-LC-RE-AB-RD-GE,03-04-2023
-33055146,1.1,patrimonial,v1.3-RL,31-03-2023
+28196889,Recertificação-Fase-2---Bloco-1---Patrimonial,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,01-08-2023
 33055146,BS---Patrimonial---1.3.0,patrimonial,v1.3-RL-CC-EM-RNRO,28-07-2023
 33164021,Tokio-Marine---Open-Insurance-Barazil-V1.0.0,patrimonial,v1.3-RL,29-07-2023
 33245762,Too-Seguros-Auth-Server,patrimonial,v1.3-RL,25-07-2023
@@ -93,20 +98,20 @@ Id da Organização,Deployment,API,Version,Data
 61074175,MAPFRE-OP-v1,patrimonial,v1.3-RL,27-07-2023
 61550141,OpIn-Liberty-Patrimonialv1.0.0,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,21-07-2023
 61573796,Nexus-for-Open-Insurance-as-of-July-2023,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,20-07-2023
-87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-M-2,patrimonial,v1.3-RL,31-03-2023
-87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-E-PREVIDENCIA-SA-M,patrimonial,v1.3-CR-LC,31-03-2023
 87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-SA-1-AUGUST-2023,patrimonial,v1.3-EM-LC,27-07-2023
 87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-SA-1-AUGUST-2023,patrimonial,v1.3-RL-RD,27-07-2023
 92751213,COMPANHIA-DE-SEGUROS-PREVIDENCIA-DO-SUL---PREVISUL,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,28-07-2023
-99999999,dummy,patrimonial,v1.3,03-10-2023
 01582075,Rio-Grande-Seguradora-Auth-Server-v1.4.0,resources,v2.3,25-07-2023
 01599296,CNP-Capitalização-OPIN-V.-1.0,resources,v2.3,27-07-2023
+01704513,SulAmérica-Seguros-de-Pessoas-e-Previdência-SA,resources,v2.3,01-08-2023
 03502099,2fe49d23811e0642219dec360032efab703c4740,resources,v2.3,25-07-2023
 03502099,Chubb-B3-Lina-OPIN-resources-v2.3.0,resources,v2.3,27-07-2023
 06109373,Resources-V2,resources,v2.3,25-07-2023
 13615969,EVIDENCE-PREVIDENCIA-SA-1-AUGUST-2023,resources,v2.3,27-07-2023
+15138043,Open-Insurance-Fase-2-v2.3.0,resources,v2.3,01-08-2023
 19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,resources,v2.3,26-07-2023
 24856160,Youse-OPIN-V.-1.0,resources,v2.3,28-07-2023
+28196889,Recertificação-Fase-2---Bloco-1---Resources,resources,v2.3,01-08-2023
 32090920,SANTANDER-CAPITALIZACAO-SA-1-AUGUST-2023,resources,v2.3,27-07-2023
 32724962,BTG-Pactual-Seguros-OPIN-v1.0.0,resources,v2.3,28-07-2023
 33055146,BS---Resources-v2.3.0,resources,v2.3,28-07-2023
@@ -116,7 +121,9 @@ Id da Organização,Deployment,API,Version,Data
 38155804,Caixa-Capitalização-Auth-Server-v1.4.0,resources,v2.3,28-07-2023
 42283770,Icatu-Seguros-Auth-Server-v1.4.0,resources,v2.3,21-07-2023
 44187990,Darwin-B3-Lina-OPIN-resources-v2.3.0,resources,v2.3,27-07-2023
+61074175,MAPFRE-OP-v1,resources,v2.3,01-08-2023
 61100145,OpIn-Indiana-Resourcesv1.0.0,resources,v2.3,19-07-2023
+61198164,Porto-Seguro---Resources-v2.3.0,resources,v2.3,01-08-2023
 61550141,OpIn-Liberty-Resourcesv1.0.0,resources,v2.3,19-07-2023
 61557039,Itau-Seguros-Open-Insurance-Brazil-v2.3.0,resources,v2.3,20-07-2023
 61573796,Nexus-for-Open-Insurance-as-of-July-2023,resources,v2.3,20-07-2023
