@@ -25,9 +25,6 @@ func GenerateTable(apisList []string, phase string, version string) {
 
 	organisationsMap := makeOrganisationsMap(false)
 
-	// split apisList into apis and versions
-	apis, _ := splitApisList(apisList)
-
 	for _, file := range filteredFiles {
 		fileSplit := strings.Split(file, "/")
 		fileName := fileSplit[len(fileSplit) - 1]
@@ -54,7 +51,7 @@ func GenerateTable(apisList []string, phase string, version string) {
 			date,
 		})
 
-		apiIndex := findApiIndex(apis, api)
+		apiIndex := findApiIndex(apisList, translateNameFromFileNameToApisList(api, version))
 		if ind := searchFileInTable(table, orgName, deploymentName); ind == -1 {
 			newRow := make([]string, len(tableHeaders))
 			newRow[0] = orgName
@@ -76,7 +73,6 @@ func GenerateTable(apisList []string, phase string, version string) {
 
 func filterFilesByApisAndVersion(submissionFiles models.GithubTree, apisList []string) []string {
 	var filteredFiles []string
-	apis, versions := splitApisList(apisList)
 
 	for _, file := range submissionFiles {
 		filePath := file.Path
@@ -84,32 +80,30 @@ func filterFilesByApisAndVersion(submissionFiles models.GithubTree, apisList []s
 		fileApi := fileSplit[2]
 		fileVersion := fileSplit[3]
 
-		apiIndex := findApiIndex(apis, fileApi)
+		apiIndex := findApiIndex(apisList, translateNameFromFileToApisList(fileApi, fileVersion))
+		
+		if apiIndex != -1 {
+			listVersion := strings.Split(apisList[apiIndex], "_")[1][1:]
+			isVersionEqual := fileVersion == listVersion + ".0"
+			isOldVersion := strings.HasSuffix(listVersion, "-old")
+			isOldVersionEqual := strings.Replace(fileVersion, ".0", "", 1) == listVersion
 
-		if apiIndex != -1 && fileVersion == versions[apiIndex][1:] + ".0" {
-			filteredFiles = append(filteredFiles, filePath)
+			if isOldVersion {
+				fmt.Println(fileVersion, listVersion, isOldVersionEqual)
+			}
+
+			if isOldVersion && isOldVersionEqual || isVersionEqual {
+				filteredFiles = append(filteredFiles, filePath)
+			}
 		}
 	}
 
 	return filteredFiles
 }
 
-func splitApisList(apisList []string) ([]string, []string) {
-	var apis []string
-	var versions []string
-
-	for _, api := range apisList {
-		apiSplit := strings.Split(api, "_")
-		apis = append(apis, apiSplit[0])
-		versions = append(versions, apiSplit[1])
-	}
-
-	return apis, versions
-}
-
 func findApiIndex(apis []string, api string) int {
 	for i, element := range apis {
-		if element == api {
+		if element == api || element == api + "-old" {
 			return i
 		}
 	}
@@ -127,4 +121,15 @@ func apiTableHeaders(apisList []string) []string {
 		tableHeaders = append(tableHeaders, header)
 	}
 	return tableHeaders
+}
+
+func translateNameFromFileToApisList(api string, version string) string {
+	return api + "_v" + strings.Replace(version, ".0", "", 1)
+}
+
+func translateNameFromFileNameToApisList(api string, version string) string {
+	if len(strings.Split(version, "-")[0]) == 2 {
+		version = "v1.0"
+	}
+	return api + "_" + strings.Split(version, "-")[0]
 }

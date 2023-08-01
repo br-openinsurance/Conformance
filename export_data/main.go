@@ -12,7 +12,7 @@ import (
 
 // go run main.go -t <phaseNo> -v <versionGroup>
 // example
-// go run main.go -t phase2 -v first
+// go run main.go -t phase2 -v current
 
 var (
 	Target            string
@@ -21,7 +21,7 @@ var (
 
 func init() {
 	flag.StringVar(&Target, "t", "phase2", "Target Table")
-	flag.StringVar(&Version, "v", "latest", "API Versions")
+	flag.StringVar(&Version, "v", "current", "API Versions")
 	flag.Parse()
 }
 
@@ -53,12 +53,12 @@ func main() {
 		}
 
 		switch Version {
-		case "latest":
+		case "current":
 			apiVersions = []string { "2.3", "1.4", "1.4", "2.3", "1.2", "1.2", "1.3", "1.2" }
-		case "first":
+		case "legacy":
 			apiVersions = []string { "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0", "1.0" }
 		default:
-			log.Fatalf("Invalid version entered: %s. Possible values: first, latest", Version)
+			log.Fatalf("Invalid version entered: %s. Possible values: legacy, current", Version)
 		}
 
 		apiHeaderNames = []string {
@@ -75,10 +75,10 @@ func main() {
 		apiFamilyTypes = []string { "endorsement", "claim-notification" }
 
 		switch Version {
-		case "latest":
+		case "current":
 			apiVersions = []string { "1.1", "1.2" }
 		default:
-			log.Fatalf("Invalid version entered: %s. Possible values: latest", Version)
+			log.Fatalf("Invalid version entered: %s. Possible values: current", Version)
 		}
 
 		apiHeaderNames = []string { 
