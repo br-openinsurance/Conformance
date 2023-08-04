@@ -88,10 +88,6 @@ func filterFilesByApisAndVersion(submissionFiles models.GithubTree, apisList []s
 			isOldVersion := strings.HasSuffix(listVersion, "-old")
 			isOldVersionEqual := strings.Replace(fileVersion, ".0", "", 1) == listVersion
 
-			if isOldVersion {
-				fmt.Println(fileVersion, listVersion, isOldVersionEqual)
-			}
-
 			if isOldVersion && isOldVersionEqual || isVersionEqual {
 				filteredFiles = append(filteredFiles, filePath)
 			}
