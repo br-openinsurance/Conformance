@@ -8,10 +8,11 @@ Id da Organização,Deployment,API,Version,Data
 03502099,Chubb-B3-Lina-OPIN-consents-v2.3.0,consents,v2.3,27-07-2023
 06109373,Consents-v2.3,consents,v2.3,25-07-2023
 13615969,EVIDENCE-PREVIDENCIA-SA-1-AUGUST-2023,consents,v2.3,27-07-2023
+14723379,Consents,consents,v2.3,05-08-2023
 15138043,Open-Insurance-Fase-2-v2.3.0,consents,v2.3,01-08-2023
 19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,consents,v2.3,26-07-2023
+27665207,brasilprev-01082023,consents,v2.3,05-08-2023
 28196889,Recertificação-Fase-2---Bloco-1---Consents,consents,v2.3,01-08-2023
-30209092,SANTANDER-CAPITALIZACAO-SA-1-AUGUST-2023,consents,v2.3,27-07-2023
 32724962,BTG-Pactual-Seguros-OPIN-v1.0.0,consents,v2.3,28-07-2023
 33055146,BS---Consents-v2.3.0,consents,v2.3,28-07-2023
 33061813,PRUDENTIAL-B3-LINA-OPIN-Consents-v2.3.0,consents,v2.3,02-08-2023
@@ -39,8 +40,10 @@ Id da Organização,Deployment,API,Version,Data
 03502099,Chubb-B3-Lina-OPIN-customers-personalv1.4.0,customers-business,v1.4,27-07-2023
 06109373,Customer-Business-V1.4,customers-business,v1.4,25-07-2023
 13615969,EVIDENCE-PREVIDENCIA-SA-1-AUGUST-2023,customers-business,v1.4,27-07-2023
+14723379,Customer-Business-,customers-business,v1.4,05-08-2023
 15138043,Open-Insurance-Fase-2-v1.4.0,customers-business,v1.4,01-08-2023
 19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,customers-business,v1.4,26-07-2023
+27665207,brasilprev-fase2-010823,customers-business,v1.4,05-08-2023
 28196889,Recertificação-Fase-2---Bloco-1---Customer-Busines,customers-business,v1.4,01-08-2023
 32724962,BTG-Pactual-Seguros-OPIN-v1.0.0,customers-business,v1.4,28-07-2023
 33055146,BS---Customer-v.1.4.0,customers-business,v1.4,28-07-2023
@@ -67,8 +70,10 @@ Id da Organização,Deployment,API,Version,Data
 03502099,Chubb-B3-Lina-OPIN-customers-personal-v1.4.0,customers-personal,v1.4,27-07-2023
 06109373,Customer-Personal-v1.4,customers-personal,v1.4,25-07-2023
 13615969,EVIDENCE-PREVIDENCIA-SA-1-AUGUST-2023,customers-personal,v1.4,27-07-2023
+14723379,Customer-Personal,customers-personal,v1.4,05-08-2023
 15138043,Open-Insurance-Fase-2-v1.4.0,customers-personal,v1.4,03-08-2023
 19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,customers-personal,v1.4,26-07-2023
+27665207,brasilprev-fase2-010823,customers-personal,v1.4,05-08-2023
 28196889,Recertificação-Fase-2---Bl-1---Customer-Personal,customers-personal,v1.4,01-08-2023
 32724962,BTG-Pactual-Seguros-OPIN-v1.0.0,customers-personal,v1.4,28-07-2023
 33055146,BS---Customers-v1.4.0,customers-personal,v1.4,28-07-2023
@@ -94,6 +99,7 @@ Id da Organização,Deployment,API,Version,Data
 03502099,654206608a66d0819b50d8358aa7019f56da8744,patrimonial,v1.3-RL,27-07-2023
 03502099,Chubb-B3-Lina-OPIN-ins-patrimonial-v1.3.0,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,27-07-2023
 06109373,Patrimonial-V1.3,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,25-07-2023
+14723379,Patrimonial,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,05-08-2023
 28196889,Recertificação-Fase-2---Bloco-1---Patrimonial,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,01-08-2023
 33055146,BS---Patrimonial---1.3.0,patrimonial,v1.3-RL-CC-EM-RNRO,28-07-2023
 33164021,Tokio-Marine---Open-Insurance-Barazil-V1.0.0,patrimonial,v1.3-RL,29-07-2023
@@ -115,8 +121,10 @@ Id da Organização,Deployment,API,Version,Data
 03502099,Chubb-B3-Lina-OPIN-resources-v2.3.0,resources,v2.3,27-07-2023
 06109373,Resources-V2,resources,v2.3,25-07-2023
 13615969,EVIDENCE-PREVIDENCIA-SA-1-AUGUST-2023,resources,v2.3,27-07-2023
+14723379,Resources,resources,v2.3,05-08-2023
 15138043,Open-Insurance-Fase-2-v2.3.0,resources,v2.3,01-08-2023
 19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,resources,v2.3,26-07-2023
+27665207,brasilprev-fase2-010823,resources,v2.3,05-08-2023
 28196889,Recertificação-Fase-2---Bloco-1---Resources,resources,v2.3,01-08-2023
 32724962,BTG-Pactual-Seguros-OPIN-v1.0.0,resources,v2.3,28-07-2023
 33055146,BS---Resources-v2.3.0,resources,v2.3,28-07-2023
