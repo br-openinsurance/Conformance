@@ -13,6 +13,7 @@ Id da Organização,Deployment,API,Version,Data
 19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,consents,v2.3,26-07-2023
 27665207,brasilprev-01082023,consents,v2.3,05-08-2023
 28196889,Recertificação-Fase-2---Bloco-1---Consents,consents,v2.3,01-08-2023
+29408732,1.4.0,consents,v2.3,08-08-2023
 32724962,BTG-Pactual-Seguros-OPIN-v1.0.0,consents,v2.3,28-07-2023
 33055146,BS---Consents-v2.3.0,consents,v2.3,28-07-2023
 33061813,PRUDENTIAL-B3-LINA-OPIN-Consents-v2.3.0,consents,v2.3,02-08-2023
@@ -75,6 +76,7 @@ Id da Organização,Deployment,API,Version,Data
 19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,customers-personal,v1.4,26-07-2023
 27665207,brasilprev-fase2-010823,customers-personal,v1.4,05-08-2023
 28196889,Recertificação-Fase-2---Bl-1---Customer-Personal,customers-personal,v1.4,01-08-2023
+29408732,1.4.0,customers-personal,v1.4,08-08-2023
 32724962,BTG-Pactual-Seguros-OPIN-v1.0.0,customers-personal,v1.4,28-07-2023
 33055146,BS---Customers-v1.4.0,customers-personal,v1.4,28-07-2023
 33061813,PRUDENTIAL-B3-LINA-OPIN-Customer-Personal-v1.4.0,customers-personal,v1.4,02-08-2023
@@ -126,6 +128,7 @@ Id da Organização,Deployment,API,Version,Data
 19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,resources,v2.3,26-07-2023
 27665207,brasilprev-fase2-010823,resources,v2.3,05-08-2023
 28196889,Recertificação-Fase-2---Bloco-1---Resources,resources,v2.3,01-08-2023
+29408732,2.3.0,resources,v2.3,08-08-2023
 32724962,BTG-Pactual-Seguros-OPIN-v1.0.0,resources,v2.3,28-07-2023
 33055146,BS---Resources-v2.3.0,resources,v2.3,28-07-2023
 33061813,PRUDENTIAL-B3-LINA-OPIN-Resources-v2.3.0,resources,v2.3,02-08-2023
