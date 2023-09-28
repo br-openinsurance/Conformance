@@ -24,6 +24,7 @@ Id da Organização,Deployment,API,Version,Data
 33245762,Too-Seguros-Auth-Server,consents,v2.3,25-07-2023
 34020354,Caixa-Seguradora-OPIN-V.-1.0,consents,v2.3,25-07-2023
 34020354,Youse-OPIN-V.-1.0,consents,v2.3,28-07-2023
+38155802,consents-api-v1,consents,v2.3,26-09-2023
 38155804,Caixa-Capitalização-Auth-Server-v1.4.0,consents,v2.3,28-07-2023
 42283770,Icatu-Seguros-Auth-Server-v1.4.0,consents,v2.3,28-07-2023
 44187990,Darwin-B3-Lina-OPIN-consents-v2.3.0,consents,v2.3,27-07-2023
@@ -126,11 +127,16 @@ Id da Organização,Deployment,API,Version,Data
 28196889,Recertificação-Fase-2---Bloco-1---Patrimonial,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,01-08-2023
 29980158,HDI-Seguros-B3-Lina-OPIN-ins-patrimonial-v1.3.0,patrimonial,v1.3-RL,17-08-2023
 33055146,BS---Patrimonial---1.3.0,patrimonial,v1.3-RL-CC-EM-RNRO,28-07-2023
+33055146,BS---Patrimonial---1.3.0,patrimonial,v1.3-RL-CC-EM,26-09-2023
 33164021,Tokio-Marine---Open-Insurance-Barazil-V1.0.0,patrimonial,v1.3-RL,29-07-2023
+33164021,Tokio-Marine---Opin-patrimonial-condominio,patrimonial,v1.3-CC,26-09-2023
+33164021,Tokio-Marine---Opin-patrimonial-empresarial,patrimonial,v1.3-EM,26-09-2023
+33164021,Tokio-Marine---Opin-patrimonial-risco-engenharia,patrimonial,v1.3-RE,26-09-2023
 33245762,Too-Seguros-Auth-Server,patrimonial,v1.3-RL,25-07-2023
 34020354,Caixa-Seguradora-OPIN-V.-1.0,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,20-09-2023
 34020354,Caixa-Seguradora-OPIN-V.-1.0,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,25-07-2023
 34020354,Youse-OPIN-V.-1.0,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,28-07-2023
+38155802,patrimonial-api-v1,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,26-09-2023
 61074175,MAPFRE-OP-v1,patrimonial,v1.3-RL,27-07-2023
 61198164,Porto-Seguro---Patrimonial---1.3.0,patrimonial,v1.3-RL-CC-EM,21-09-2023
 61198164,Porto-Seguro---Patrimonial---1.3.0,patrimonial,v1.3-RL,03-08-2023
@@ -140,6 +146,7 @@ Id da Organização,Deployment,API,Version,Data
 61573796,Nexus-for-Open-Insurance-as-of-July-2023,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,20-07-2023
 87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-SA-1-AUGUST-2023,patrimonial,v1.3-EM-LC,27-07-2023
 87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-SA-1-AUGUST-2023,patrimonial,v1.3-RL-RD,27-07-2023
+87376109,ZURICH-SANTANDER-BRASIL-SEGUROS-SA-20-SEPTEMBER-20,patrimonial,v1.3-EM-LC-RD,23-09-2023
 92751213,COMPANHIA-DE-SEGUROS-PREVIDENCIA-DO-SUL---PREVISUL,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,20-09-2023
 92751213,COMPANHIA-DE-SEGUROS-PREVIDENCIA-DO-SUL---PREVISUL,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,28-07-2023
 96348677,Patrimonial,patrimonial,v1.3-RL-CC-EM-RNRO-GB-LC-RE-AB-RD-GE,02-09-2023
@@ -167,6 +174,7 @@ Id da Organização,Deployment,API,Version,Data
 33245762,Too-Seguros-Auth-Server,resources,v2.3,25-07-2023
 34020354,Caixa-Seguradora-OPIN-V.-1.0,resources,v2.3,25-07-2023
 34020354,Youse-OPIN-V.-1.0,resources,v2.3,28-07-2023
+38155802,resources-api-v1,resources,v2.3,26-09-2023
 38155804,Caixa-Capitalização-Auth-Server-v1.4.0,resources,v2.3,28-07-2023
 42283770,Icatu-Seguros-Auth-Server-v1.4.0,resources,v2.3,21-07-2023
 44187990,Darwin-B3-Lina-OPIN-resources-v2.3.0,resources,v2.3,27-07-2023
