@@ -5,13 +5,13 @@ repos:
         name: Check File Names
         language: python
         entry: python -m scripts.check-file-names
-        args: [acceptance-and-branches-abroad_1.0, acceptance-and-branches-abroad_1.2, business_1.0, business_1.3, claim-notification_1.2, consents_1.0, consents_2.2, consents_2.3, customers-business_1.4, customers-personal_1.4, endorsement_1.1, financial-risk_1.0, financial-risk_1.2, patrimonial_1.0, patrimonial_1.3, personal_1.0, personal_1.3, resources_1.0, resources_1.2, resources_2.3, responsibility_1.0, responsibility_1.2, auto_1.3, rural_1.3, transport_1.2]
+        args: [acceptance-and-branches-abroad_1.0, acceptance-and-branches-abroad_1.2, acceptance-and-branches-abroad_1.3, business_1.0, business_1.3, claim-notification_1.2, consents_1.0, consents_2.2, consents_2.3, customers-business_1.4, customers-personal_1.4, endorsement_1.1, financial-risk_1.0, financial-risk_1.2, financial-risk_1.3, patrimonial_1.0, patrimonial_1.3, personal_1.0, personal_1.3, resources_1.0, resources_1.2, resources_2.3, responsibility_1.0, responsibility_1.2, responsibility_1.3, auto_1.3, rural_1.3, transport_1.2]
         exclude: ".*"
         always_run: true
       - id: check-json-files
         name: Check Json Files
         language: python
         entry: python -m scripts.check-json-files
-        args: [acceptance-and-branches-abroad_1.2, business_1.3, claim-notification_1.2, consents_2.2, consents_2.3, customers-business_1.4, customers-personal_1.4, endorsement_1.1, financial-risk_1.2, patrimonial_1.3, personal_1.3, resources_1.2, resources_2.3, responsibility_1.2, auto_1.3, rural_1.3, transport_1.2]
+        args: [acceptance-and-branches-abroad_1.2, acceptance-and-branches-abroad_1.3, business_1.3, claim-notification_1.2, consents_2.2, consents_2.3, customers-business_1.4, customers-personal_1.4, endorsement_1.1, financial-risk_1.2, financial-risk_1.3, patrimonial_1.3, personal_1.3, resources_1.2, resources_2.3, responsibility_1.2, responsibility_1.3, auto_1.3, rural_1.3, transport_1.2]
         exclude: ".*"
         always_run: true
