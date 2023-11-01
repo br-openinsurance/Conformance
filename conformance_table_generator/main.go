@@ -35,7 +35,7 @@ func main() {
 				"acceptance-and-branches-abroad_v1.2", "customers-business_v1.4",
 				"consents_v2.3", "financial-risk_v1.2",
 				"patrimonial_v1.3", "customers-personal_v1.4",
-				"resources_v2.3", "responsibility_v1.2",
+				"resources_v2.3", "responsibility_v1.2", "auto_v1.3", "rural_v1.3", "transport_1.2"
 			}
 		case "legacy":
 			apis = []string{
