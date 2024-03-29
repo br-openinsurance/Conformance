@@ -1,0 +1,11 @@
+{
+	"api": "patrimonial_v1.4",
+	"sd": "9449",
+	"docusign_id": "da257a8e-25f5-4473-9159-3cf17f0d6a5c",
+	"test_plan_uri": [
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=ZHKFrQMdaYVNN\u0026public=true",
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=a5n9MMqfJc4Li\u0026public=true",
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=RiMcNtrp0hIsz\u0026public=true",
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=INrwBBsbtdBje\u0026public=true"
+	]
+}
