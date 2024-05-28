@@ -1,0 +1,9 @@
+{
+	"api": "financial-assistance_v1.2",
+	"sd": "10110",
+	"docusign_id": "b24e418b-1374-4d20-8dc6-8cc48be60170",
+	"test_plan_uri": [
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=4CrrdPpIf6BZV&public=true",
+    "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=AbI36nu7NUcRc&public=true"
+	]
+}
