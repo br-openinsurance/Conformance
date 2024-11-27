@@ -1,0 +1,9 @@
+{
+	"api": "contract-life-pension_v1.12.0",
+	"sd": "14344",
+	"docusign_id": "2d6b083e-5af0-44ce-924e-ebc500aea50f",
+	"test_plan_uri": [
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=hLG5d6PBwItUb\u0026public=true",
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=faxmY8jj2I7Cd\u0026public=true"
+	]
+}
