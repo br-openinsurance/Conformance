@@ -22,11 +22,6 @@ jobs:
         cd conformance_table_generator/
         go run main.go -t phase2 -v current
 
-    - name: Run conformance table generator for legacy versions of phase 2
-      run: |
-        cd conformance_table_generator/
-        go run main.go -t phase2 -v legacy
-    
     - name: Run export data for current versions of phase 2
       run: |
         cd export_data/
