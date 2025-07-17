@@ -52,7 +52,7 @@ def check_filenames(apis):
         api_name, version = api.split('_')
         directory = f"./submissions/functional/{api_name}/{version}.0"
         wrong_files[directory] = []
-
+        
         for file in os.listdir(directory):
             if is_invalid_filename(file, api_name, version):
                 wrong_files[directory].append(file)
