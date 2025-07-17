@@ -1,10 +1,10 @@
 {
-	"api": "quote-capitalization-title_v1.10.0",
-	"sd": "16014",
-	"docusign_id": "a675f7a6-ee38-4fae-bb5e-b4db30f20496",
-	"test_plan_uri": [
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=akeNpjT5liyo4\u0026public=true",
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=bBbfpJY6bs70r\u0026public=true",
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=z4iVy9QXkduVw\u0026public=true"
-	]
+    "api": "quote-capitalization-title_v1.10",
+    "sd": "16014",
+    "docusign_id": "a675f7a6-ee38-4fae-bb5e-b4db30f20496",
+    "test_plan_uri": [
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=akeNpjT5liyo4&public=true",
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=bBbfpJY6bs70r&public=true",
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=z4iVy9QXkduVw&public=true"
+    ]
 }

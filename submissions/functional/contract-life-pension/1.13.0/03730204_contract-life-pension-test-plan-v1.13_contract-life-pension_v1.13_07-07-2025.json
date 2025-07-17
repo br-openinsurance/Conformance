@@ -1,9 +1,9 @@
 {
-	"api": "contract-life-pension_v1.13.0",
-	"sd": "16746",
-	"docusign_id": "ffbf25cf-8bc3-4c3a-9537-91d15f936b6e",
-	"test_plan_uri": [
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=zIlnyR27I10Rb\u0026public=true",
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=qqUvUsFSqhxP4\u0026public=true"
-	]
+    "api": "contract-life-pension_v1.13",
+    "sd": "16746",
+    "docusign_id": "ffbf25cf-8bc3-4c3a-9537-91d15f936b6e",
+    "test_plan_uri": [
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=zIlnyR27I10Rb&public=true",
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=qqUvUsFSqhxP4&public=true"
+    ]
 }

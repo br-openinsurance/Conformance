@@ -78,7 +78,24 @@ repos:
           responsibility_1.3,
           auto_1.3,
           rural_1.3,
-          transport_1.2
+          transport_1.2,
+          claim-notification-damages_1.3,
+          claim-notification-person_1.3,
+          endorsement_1.2,
+          quote-patrimonial-home_1.10,
+          quote-acceptance-and-branches-abroad_1.8,
+          quote-auto_1.9,
+          quote-financial-risk_1.8,
+          quote-housing_1.8,
+          quote-responsibility_1.8,
+          quote-rural_1.8,
+          quote-transport_1.8,
+          contract-life-pension_1.13,
+          withdrawal-pension_1.3,
+          withdrawal-capitalization-title_1.3,
+          quote-person-life_1.11,
+          quote-person-travel_1.11,
+          quote-capitalization-title_1.10
         ]
         exclude: ".*"
         always_run: true

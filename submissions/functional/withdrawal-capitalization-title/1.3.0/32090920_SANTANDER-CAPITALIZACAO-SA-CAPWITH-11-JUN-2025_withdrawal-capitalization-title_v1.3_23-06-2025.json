@@ -1,8 +1,8 @@
 {
-	"api": "withdrawal-capitalization-title_v1.3.0",
-	"sd": "16495",
-	"docusign_id": "c753ff27-a4ab-4cd5-a437-dac893d5cd5f",
-	"test_plan_uri": [
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=VLSDP4ZdPEdjo\u0026public=true"
-	]
+    "api": "withdrawal-capitalization-title_v1.3",
+    "sd": "16495",
+    "docusign_id": "c753ff27-a4ab-4cd5-a437-dac893d5cd5f",
+    "test_plan_uri": [
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=VLSDP4ZdPEdjo&public=true"
+    ]
 }

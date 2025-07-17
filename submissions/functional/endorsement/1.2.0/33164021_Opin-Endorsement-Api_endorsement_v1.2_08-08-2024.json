@@ -1,8 +1,8 @@
 {
-	"api": "endorsement_v1.2.0",
-	"sd": "11030",
-	"docusign_id": "24e7937d-fcf3-4212-a98b-910644c3d9da",
-	"test_plan_uri": [
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=0zjxgmwhVSHoq\u0026public=true"
-	]
+    "api": "endorsement_v1.2",
+    "sd": "11030",
+    "docusign_id": "24e7937d-fcf3-4212-a98b-910644c3d9da",
+    "test_plan_uri": [
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=0zjxgmwhVSHoq&public=true"
+    ]
 }

@@ -1,8 +1,8 @@
 {
-	"api": "claim-notification-damages_v1.3.0",
-	"sd": "13690",
-	"docusign_id": "2d6b083e-5af0-44ce-924e-ebc500aea50f",
-	"test_plan_uri": [
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=CiUO6fu6KqX56\u0026public=true"
-	]
+    "api": "claim-notification-damages_v1.3",
+    "sd": "13690",
+    "docusign_id": "2d6b083e-5af0-44ce-924e-ebc500aea50f",
+    "test_plan_uri": [
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=CiUO6fu6KqX56&public=true"
+    ]
 }

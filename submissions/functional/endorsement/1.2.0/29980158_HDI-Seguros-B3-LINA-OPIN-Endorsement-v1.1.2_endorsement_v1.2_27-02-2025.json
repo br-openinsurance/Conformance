@@ -1,9 +1,9 @@
 {
-	"api": "endorsement_v1.2.0",
-	"sd": "15272",
-	"docusign_id": "26beeb33-5904-4311-b70c-a6bf54f01156",
-	"test_plan_uri": [
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=sSqvtrtbkFFL4\u0026public=true",
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=0IJggckw43QkU\u0026public=true"
-	]
+    "api": "endorsement_v1.2",
+    "sd": "15272",
+    "docusign_id": "26beeb33-5904-4311-b70c-a6bf54f01156",
+    "test_plan_uri": [
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=sSqvtrtbkFFL4&public=true",
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=0IJggckw43QkU&public=true"
+    ]
 }

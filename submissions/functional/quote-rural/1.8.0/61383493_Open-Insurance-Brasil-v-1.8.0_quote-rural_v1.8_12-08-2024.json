@@ -1,8 +1,8 @@
 {
-	"api": "quote-rural_v1.8.0",
-	"sd": "11059",
-	"docusign_id": "2708acac-994c-415c-877e-69d280881145",
-	"test_plan_uri": [
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=YbxTbaXIp06Ab\u0026public=true"
-	]
+    "api": "quote-rural_v1.8",
+    "sd": "11059",
+    "docusign_id": "2708acac-994c-415c-877e-69d280881145",
+    "test_plan_uri": [
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=YbxTbaXIp06Ab&public=true"
+    ]
 }
