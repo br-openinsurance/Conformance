@@ -1,9 +1,9 @@
 {
-	"api": "quote-person-travel_v1.11.0",
-	"sd": "16716",
-	"docusign_id": "ee0047fa-529e-4d57-a13b-5702664340ff",
-	"test_plan_uri": [
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=rvzdHQB3oOBxw\u0026public=true",
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=FIlQUjosHJPHh\u0026public=true"
-	]
+    "api": "quote-person-travel_v1.11",
+    "sd": "16716",
+    "docusign_id": "ee0047fa-529e-4d57-a13b-5702664340ff",
+    "test_plan_uri": [
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=rvzdHQB3oOBxw&public=true",
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=FIlQUjosHJPHh&public=true"
+    ]
 }

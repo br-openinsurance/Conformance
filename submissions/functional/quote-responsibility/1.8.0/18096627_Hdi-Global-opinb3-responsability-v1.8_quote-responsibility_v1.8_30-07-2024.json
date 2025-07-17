@@ -1,8 +1,8 @@
 {
-	"api": "quote-responsibility_v1.8.0",
-	"sd": "10883",
-	"docusign_id": "da257a8e-25f5-4473-9159-3cf17f0d6a5c",
-	"test_plan_uri": [
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=3UpDTIWDor0Xh\u0026public=true"
-	]
+    "api": "quote-responsibility_v1.8",
+    "sd": "10883",
+    "docusign_id": "da257a8e-25f5-4473-9159-3cf17f0d6a5c",
+    "test_plan_uri": [
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=3UpDTIWDor0Xh&public=true"
+    ]
 }

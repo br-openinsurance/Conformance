@@ -1,8 +1,8 @@
 {
-	"api": "quote-transport_v1.8.0",
-	"sd": "13411",
-	"docusign_id": "eac676d9-0b0e-4d03-be86-080ead54a825",
-	"test_plan_uri": [
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=GQ0NYk1q98RBD\u0026public=true"
-	]
+    "api": "quote-transport_v1.8",
+    "sd": "13411",
+    "docusign_id": "eac676d9-0b0e-4d03-be86-080ead54a825",
+    "test_plan_uri": [
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=GQ0NYk1q98RBD&public=true"
+    ]
 }

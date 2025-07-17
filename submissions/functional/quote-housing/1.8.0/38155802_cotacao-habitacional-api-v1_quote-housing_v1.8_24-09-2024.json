@@ -1,8 +1,8 @@
 {
-	"api": "quote-housing_v1.8.0",
-	"sd": "13752",
-	"docusign_id": "957acda5-496c-424a-bd57-53d953797b69",
-	"test_plan_uri": [
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=EVZe0gT5oNRHZ\u0026public=true"
-	]
+    "api": "quote-housing_v1.8",
+    "sd": "13752",
+    "docusign_id": "957acda5-496c-424a-bd57-53d953797b69",
+    "test_plan_uri": [
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=EVZe0gT5oNRHZ&public=true"
+    ]
 }

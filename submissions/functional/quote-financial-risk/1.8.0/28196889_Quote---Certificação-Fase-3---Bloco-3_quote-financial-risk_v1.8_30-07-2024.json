@@ -1,8 +1,8 @@
 {
-	"api": "quote-financial-risk_v1.8.0",
-	"sd": "10879",
-	"docusign_id": "68e0e847-dc30-431b-90a7-4cface7dc976",
-	"test_plan_uri": [
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=aCllR9Z20uQy9\u0026public=true"
-	]
+    "api": "quote-financial-risk_v1.8",
+    "sd": "10879",
+    "docusign_id": "68e0e847-dc30-431b-90a7-4cface7dc976",
+    "test_plan_uri": [
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=aCllR9Z20uQy9&public=true"
+    ]
 }

@@ -1,9 +1,9 @@
 {
-	"api": "quote-person-life_v1.11.0",
-	"sd": "16588",
-	"docusign_id": "c291bc14-81b0-4152-9750-adec188c23e0",
-	"test_plan_uri": [
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=mFhNQNKpHZKmC\u0026public=true",
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=wEjMf9fTP8DQP\u0026public=true"
-	]
+    "api": "quote-person-life_v1.11",
+    "sd": "16588",
+    "docusign_id": "c291bc14-81b0-4152-9750-adec188c23e0",
+    "test_plan_uri": [
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=mFhNQNKpHZKmC&public=true",
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=wEjMf9fTP8DQP&public=true"
+    ]
 }

@@ -1,9 +1,9 @@
 {
-	"api": "withdrawal-pension_v1.3.0",
-	"sd": "16429",
-	"docusign_id": "c291bc14-81b0-4152-9750-adec188c23e0",
-	"test_plan_uri": [
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=vvyNsDZli51MM\u0026public=true",
-		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=RsuMRvHvmHg9I\u0026public=true"
-	]
+    "api": "withdrawal-pension_v1.3",
+    "sd": "16429",
+    "docusign_id": "c291bc14-81b0-4152-9750-adec188c23e0",
+    "test_plan_uri": [
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=vvyNsDZli51MM&public=true",
+        "https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=RsuMRvHvmHg9I&public=true"
+    ]
 }
