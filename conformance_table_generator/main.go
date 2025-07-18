@@ -25,6 +25,10 @@ func init() {
 // Add a .env file containing your github access token to the root of this project
 // GITHUB_AT=ghp_...
 func main() {
+	log.Println("Starting table generation process...")
+	log.Printf("Target phase: %s", Target)
+	log.Printf("Version group: %s", Version)
+
 	var apis []string
 
 	switch Target {
@@ -32,22 +36,46 @@ func main() {
 		switch Version {
 		case "current":
 			apis = []string{
-				"acceptance-and-branches-abroad_v1.3", "customers-business_v1.5",
-				"patrimonial_v1.4", "customers-personal_v1.5",
-				"resources_v2.4", "responsibility_v1.3", "auto_v1.3", "rural_v1.3", "transport_1.2",
-				"consents_v2.6","resources_2.4","customers-business_v1.5","customers-personal_v1.5",
-				"acceptance-and-branches-abroad_v1.3","auto_v1.3","housing_v1.3","patrimonial_v1.4",
-				"transport_v1.2","responsibility_v1.3","financial-risk_v1.3.1","rural_v1.3",
-				"insurance-pension-plan_v1.4","insurance-capitalization-title_v1.4",
-				"insurance-financial-assistance_v1.2","insurance-person_v1.6",
+				"acceptance-and-branches-abroad_v1.3",
+				"customers-business_v1.5",
+				"patrimonial_v1.4",
+				"customers-personal_v1.5",
+				"resources_v2.4",
+				"responsibility_v1.3",
+				"auto_v1.3",
+				"rural_v1.3",
+				"transport_1.2",
+				"consents_v2.6",
+				"resources_2.4",
+				"customers-business_v1.5",
+				"customers-personal_v1.5",
+				"acceptance-and-branches-abroad_v1.3",
+				"auto_v1.3",
+				"housing_v1.3",
+				"patrimonial_v1.4",
+				"transport_v1.2",
+				"responsibility_v1.3",
+				"financial-risk_v1.3.1",
+				"rural_v1.3",
+				"insurance-pension-plan_v1.4",
+				"insurance-capitalization-title_v1.4",
+				"insurance-financial-assistance_v1.2",
+				"insurance-person_v1.6",
 				"insurance-life-pension_v1.4",
 			}
 		case "legacy":
 			apis = []string{
-				"acceptance-and-branches-abroad_v1.0", "business_v1.0",
-				"consents_v2.3", "consents_v2.2", "financial-risk_v1.2",
-				"patrimonial_v1.0", "patrimonial_v1.3-old", "personal_v1.0",
-				"resources_v1.0", "resources_v1.2", "responsibility_v1.0",
+				"acceptance-and-branches-abroad_v1.0",
+				"business_v1.0",
+				"consents_v2.3",
+				"consents_v2.2",
+				"financial-risk_v1.2",
+				"patrimonial_v1.0",
+				"patrimonial_v1.3-old",
+				"personal_v1.0",
+				"resources_v1.0",
+				"resources_v1.2",
+				"responsibility_v1.0",
 			}
 		default:
 			log.Fatalf("Invalid version entered: %s. Possible values: legacy, current", Version)
@@ -55,7 +83,25 @@ func main() {
 	case "phase3":
 		switch Version {
 		case "current":
-			apis = []string{ "endorsement_v1.1.3", "claim-notification-damages_v1.2.3","claim-notification-person_v1.2.3","quote-patrimonial-home_v1.8.1" }
+			apis = []string{
+				"claim-notification-damages_v1.3",
+				"claim-notification-person_v1.3",
+				"endorsement_v1.2",
+				"quote-patrimonial-home_v1.10",
+				"quote-acceptance-and-branches-abroad_v1.8",
+				"quote-auto_v1.9",
+				"quote-financial-risk_v1.8",
+				"quote-housing_v1.8",
+				"quote-responsibility_v1.8",
+				"quote-rural_v1.8",
+				"quote-transport_v1.8",
+				"contract-life-pension_v1.13",
+				"withdrawal-pension_v1.3",
+				"withdrawal-capitalization-title_v1.3",
+				"quote-person-life_v1.11",
+				"quote-person-travel_v1.11",
+				"quote-capitalization-title_v1.10",
+			}
 		default:
 			log.Fatalf("Invalid version entered: %s. Possible values: current", Version)
 		}
@@ -63,6 +109,8 @@ func main() {
 		log.Fatalf("Invalid target entered: %s. Possible values: phase2, phase3", Target)
 	}
 
+	log.Printf("APIs to be processed: %v", apis)
 	utils.GenerateTable(apis, Target, Version)
+	log.Println("Table generation completed successfully!")
 }
 
