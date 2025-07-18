@@ -84,23 +84,23 @@ func main() {
 		switch Version {
 		case "current":
 			apis = []string{
-				"claim-notification-damages_v1.3.0",
-				"claim-notification-person_v1.3.0",
-				"endorsement_v1.2.0",
-				"quote-patrimonial-home_v1.10.0",
-				"quote-acceptance-and-branches-abroad_v1.8.0",
-				"quote-auto_v1.9.0",
-				"quote-financial-risk_v1.8.0",
-				"quote-housing_v1.8.0",
-				"quote-responsibility_v1.8.0",
-				"quote-rural_v1.8.0",
-				"quote-transport_v1.8.0",
-				"contract-life-pension_v1.13.0",
-				"withdrawal-pension_v1.3.0",
-				"withdrawal-capitalization-title_v1.3.0",
-				"quote-person-life_v1.11.0",
-				"quote-person-travel_v1.11.0",
-				"quote-capitalization-title_v1.10.0"
+				"claim-notification-damages_v1.3",
+				"claim-notification-person_v1.3",
+				"endorsement_v1.2",
+				"quote-patrimonial-home_v1.10",
+				"quote-acceptance-and-branches-abroad_v1.8",
+				"quote-auto_v1.9",
+				"quote-financial-risk_v1.8",
+				"quote-housing_v1.8",
+				"quote-responsibility_v1.8",
+				"quote-rural_v1.8",
+				"quote-transport_v1.8",
+				"contract-life-pension_v1.13",
+				"withdrawal-pension_v1.3",
+				"withdrawal-capitalization-title_v1.3",
+				"quote-person-life_v1.11",
+				"quote-person-travel_v1.11",
+				"quote-capitalization-title_v1.10",
 			}
 		default:
 			log.Fatalf("Invalid version entered: %s. Possible values: current", Version)

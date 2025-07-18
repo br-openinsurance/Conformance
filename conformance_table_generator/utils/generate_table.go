@@ -3,6 +3,7 @@ package utils
 import (
 	"fmt"
 	"strings"
+	"log"
 
 	"github.com/br-openinsurance/Conformance/tree/main/conformance_table_generator/models"
 )
@@ -14,6 +15,8 @@ func GenerateTable(apisList []string, phase string, version string) {
 
 	// filter files by chosen apis and version
 	filteredFiles := filterFilesByApisAndVersion(submissionFiles, apisList)
+
+	log.Printf("Found %d files matching the criteria for phase %s and version %s", len(filteredFiles), phase, version)
 
 	// create table and dump
 	tableHeaders := []string {"Organização", "Deployment"}

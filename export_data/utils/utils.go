@@ -178,6 +178,86 @@ func FilterEntriesWithoutConsents(inputFile string, separator rune) {
 	}
 }
 
+func FilterEntriesWithoutApiData(inputFile string, separator rune) {
+	fileRead, err := os.Open(inputFile)
+	if err != nil {
+		log.Fatalf("Failed to open file for reading: %v", err)
+	}
+	defer fileRead.Close()
+
+	reader := csv.NewReader(fileRead)
+	reader.Comma = separator
+	lines, err := reader.ReadAll()
+	if err != nil {
+		log.Fatalf("Failed to read csv file: %v", err)
+	}
+
+	if len(lines) == 0 {
+		// Nothing to do
+		return
+	}
+
+	// Recreate file (truncate)
+	fileWrite, err := os.Create(inputFile)
+	if err != nil {
+		log.Fatalf("Failed to open file for writing: %v", err)
+	}
+	defer fileWrite.Close()
+
+	writer := csv.NewWriter(fileWrite)
+	writer.Comma = separator
+	defer func() {
+		writer.Flush()
+		if err := writer.Error(); err != nil {
+			log.Fatalf("Failed flushing csv writer: %v", err)
+		}
+	}()
+
+	// Write header back
+	if err := writer.Write(lines[0]); err != nil {
+		log.Fatalf("Failed to write header: %v", err)
+	}
+
+	// Process data rows
+	var (
+		removed int
+		kept    int
+	)
+
+	for _, row := range lines[1:] {
+		// Defensive: ensure row has at least the two mandatory columns
+		if len(row) < 2 {
+			// malformed, drop
+			removed++
+			continue
+		}
+
+		hasApiData := false
+		for i := 2; i < len(row); i++ {
+			v := strings.TrimSpace(row[i])
+			if v != "" {
+				// If you want to treat "No date" as *empty*, then uncomment:
+				// if strings.EqualFold(v, "No date") {
+				//     continue
+				// }
+				hasApiData = true
+				break
+			}
+		}
+
+		if hasApiData {
+			if err := writer.Write(row); err != nil {
+				log.Fatalf("Failed to write row: %v", err)
+			}
+			kept++
+		} else {
+			removed++
+		}
+	}
+
+	log.Printf("FilterEntriesWithoutApiData: kept=%d removed=%d (total=%d)", kept, removed, kept+removed)
+}
+
 func FilterDuplicateEntries(inputFile string, separator rune) {
 	fileRead, err := os.Open(inputFile)
 	if err != nil {
