@@ -53,10 +53,13 @@ def check_json_files(apis):
             if filename.endswith(".json"):
                 file_path = os.path.join(directory, filename)
                 with open(file_path) as f:
-                    json_obj = json.load(f)
-                    approved, message = validate_json(json_obj, api_version_list)
-                    if not approved:
-                        wrong_files.append((filename, message))
+                    try:
+                        json_obj = json.load(f)
+                        approved, message = validate_json(json_obj, api_version_list)
+                        if not approved:
+                            wrong_files.append((filename, message))
+                    except json.JSONDecodeError as e:
+                        wrong_files.append((filename, f'JSON decode error: {str(e)}'))
 
     return wrong_files
 
