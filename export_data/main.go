@@ -72,18 +72,72 @@ func main() {
 			"Responsabilidade API versão " + apiVersions[7],
 		}
 	case "phase3":
-		apiFamilyTypes = []string { "endorsement", "claim-notification" }
+		apiFamilyTypes = []string{
+			"claim-notification",
+			"dynamic-fields",
+			"endorsement",
+			"notifications",
+			"quote-patrimonial-home",
+			"quote-acceptance-and-branches-abroad",
+			"quote-auto",
+			"quote-financial-risk",
+			"quote-housing",
+			"quote-responsibility",
+			"quote-rural",
+			"quote-transport",
+			"webhook",
+			"contract-life-pension",
+			"withdrawal-pension",
+			"quote-person-life",
+			"quote-person-travel",
+			"quote-capitalization-title",
+		}
 
 		switch Version {
 		case "current":
-			apiVersions = []string { "1.1", "1.2" }
+			apiVersions = []string{
+				"1.3",  // claim-notification
+				"1.4",  // dynamic-fields
+				"1.2",  // endorsement
+				"1.0",  // notifications
+				"1.10", // quote-patrimonial-home
+				"1.8",  // quote-acceptance-and-branches-abroad
+				"1.9",  // quote-auto
+				"1.8",  // quote-financial-risk
+				"1.8",  // quote-housing
+				"1.8",  // quote-responsibility
+				"1.8",  // quote-rural
+				"1.8",  // quote-transport
+				"1.1",  // webhook
+				"1.13", // contract-life-pension
+				"1.3",  // withdrawal-pension
+				"1.11", // quote-person-life
+				"1.11", // quote-person-travel
+				"1.10", // quote-capitalization-title
+			}
 		default:
 			log.Fatalf("Invalid version entered: %s. Possible values: current", Version)
 		}
 
-		apiHeaderNames = []string { 
-			"Endosso API versão " + apiVersions[0],
-			"Aviso de Sinistro API versão " + apiVersions[1],
+		apiHeaderNames = []string{
+			"Claim Notification API versão " + apiVersions[0],
+			"Dynamic Fields API versão " + apiVersions[1],
+			"Endorsement API versão " + apiVersions[2],
+			"Notifications API versão " + apiVersions[3],
+			"Quote Patrimonial Home API versão " + apiVersions[4],
+			"Quote Acceptance and Branches Abroad API versão " + apiVersions[5],
+			"Quote Auto API versão " + apiVersions[6],
+			"Quote Financial Risk API versão " + apiVersions[7],
+			"Quote Housing API versão " + apiVersions[8],
+			"Quote Responsibility API versão " + apiVersions[9],
+			"Quote Rural API versão " + apiVersions[10],
+			"Quote Transport API versão " + apiVersions[11],
+			"Webhook API versão " + apiVersions[12],
+			"Contract Life Pension API versão " + apiVersions[13],
+			"Withdrawal Pension API versão " + apiVersions[14],
+			"Quote Person Life API versão " + apiVersions[15],
+			"Quote Person Travel API versão " + apiVersions[16],
+			"Quote Capitalization Title API versão " + apiVersions[17],
 		}
 	default:
 		log.Fatalf("Invalid target entered: %s. Possible values: phase2, phase3", Target)
@@ -95,7 +149,10 @@ func main() {
 	utils.FilterDuplicateEntries(resultsPathCsv, separator)
 
 	// Specifically for phase 2, we should filter out entries that do not have certification for consents API
-	utils.FilterEntriesWithoutConsents(resultsPathCsv, separator)
+	utils.FilterEntriesWithoutApiData(resultsPathCsv, separator)
+	if Target == "phase2" {
+		utils.FilterEntriesWithoutConsents(resultsPathCsv, separator)
+	}
 
 	headers = append(headers, apiHeaderNames...)
 	utils.GenerateFromCsv(resultsPathCsv, resultsPathMd, headers, separator)
