@@ -45,6 +45,7 @@ PORTO SEGURO CIA DE SEGUROS GERAIS,Porto-Seguro---Endorsement-v1.3,,,,,,,,,,,,[0
 ITAU SEGUROS S.A.,1.13.0,,,,,,,,,,,,[26-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,
 ZURICH SANTANDER BRASIL SEGUROS E PREVIDENCIA S.A.,ZURICH-SANTANDER-BRASIL-SEGUROS-SA-QTPRE-16-JUN-25,,,,,,,,,,,,[26-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,
 ZURICH BRASIL COMPANHIA DE SEGUROS,CertificaçãoAPILifePension,,,,,,,,,,,,[04-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,
+ZURICH BRASIL COMPANHIA DE SEGUROS,CertificaçãoAPIPrevidênciaCotContrat,,,,,,,,,,,,[05-08-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,
 CHUBB SEGUROS BRASIL S.A.,Chubb-B3-Lina-OPIN-endorsement-v1.2,,,[11-04-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,,,,,,,,,,
 SAFRA SEGUROS GERAIS S.A.,FASE3BL4ENDOR,,,[24-07-2024](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,,,,,,,,,,
 SAFRA SEGUROS GERAIS S.A.,FASE3BL5ENDOR,,,[09-08-2024](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,,,,,,,,,,
@@ -73,12 +74,14 @@ ZURICH BRASIL COMPANHIA DE SEGUROS,Cotação-Financeiro,,,[31-07-2024](https://g
 ZURICH BRASIL COMPANHIA DE SEGUROS,Endosso,,,[01-08-2024](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,,,,,,,,,,
 SWISS RE CORPORATE SOLUTIONS BRASIL SEGUROS S.A.,SwissRe-Branches-Abroad-B3-Lina-OPIN,,,,,[29-08-2024](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,,,,,,,,
 ,[03-10-2023](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,,,,,,,,,,,,,
+SANTANDER CAPITALIZACAO S.A.,SANTANDER-CAPITALIZACAO-SA-QUOTE-CAP-14-JUL-2025,,,,,,,,,,,,,,,,,[22-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1)
 BRASILCAP CAPITALIZACAO S.A.,Brasilcap-Fase-3-Insurance,,,,,,,,,,,,,,,,,[10-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1)
 ,SANTANDER-CAPITALIZACAO-SA-QUOTECAP-16-JUN-2025,,,,,,,,,,,,,,,,,[30-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1)
 BRADESCO SEGUROS S.A.,BS-QUOTE-CAPITALIZATION-TITLE,,,,,,,,,,,,,,,,,[22-05-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1)
 XS4 CAPITALIZACAO S.A.,Caixa-Capitalização-Auth-Server-v2.0,,,,,,,,,,,,,,[24-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,[30-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1)
 PORTO SEGURO CIA DE SEGUROS GERAIS,Porto-Seguro---Quote-Capitalization-Title-v1.10,,,,,,,,,,,,,,,,,[01-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1)
 ITAU SEGUROS S.A.,1.10.0,,,,,,,,,,,,,,,,,[30-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1)
+ZURICH BRASIL COMPANHIA DE SEGUROS,CertificaçãoAPICapitalizaçãoCotContrat,,,,,,,,,,,,,,,,,[05-08-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1)
 ZURICH BRASIL COMPANHIA DE SEGUROS,CertificaçãoAPIxxx,,,,,,,,,,,,,,,,,[04-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1)
 CHUBB SEGUROS BRASIL S.A.,Chubb-opinb3-financial-risk-v1.8,,,,,,,[31-07-2024](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,,,,,,
 SAFRA SEGUROS GERAIS S.A.,FASE3BL3CTFRIDP,,,,,,,[15-08-2024](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,,,,,,
@@ -104,6 +107,7 @@ YELUM SEGUROS S.A.,OpIn-Yelum-Habitacional-v1.8,,,,,,,,[04-06-2025](https://gith
 ZURICH SANTANDER BRASIL SEGUROS E PREVIDENCIA S.A.,ZS-SEGUROS-QUOTE-HOUSING-11-09-24,,,,,,,,[13-09-2024](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,,,,,
 ZURICH BRASIL COMPANHIA DE SEGUROS,CertificaçãoAPIQuoteHousing,,,,,,,,[17-10-2024](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,,,,,
 ,[03-10-2023](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,,,,,,,,,,,,,
+RIO GRANDE SEGUROS E PREVIDENCIA S.A.,Rio-Grande-Seguradora-Auth-Server-v2.0.0,,,,,,,,,,,,,,,[08-08-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,
 SUL AMERICA SEGUROS DE PESSOAS E PREVIDENCIA S.A,Sulamérica-B3-Lina-OPIN-quote-person-life-v1.11,,,,,,,,,,,,,,,[03-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,
 CHUBB SEGUROS BRASIL S.A.,Chubb-B3-Lina-Quote-Person-Life-v1.11,,,,,,,,,,,,,,,[26-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,
 CARDIF DO BRASIL VIDA E PREVIDENCIA LTDA,Cardif-Vida-B3-Lina-OPIN-quote-person-life-v1.11,,,,,,,,,,,,,,,[04-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,
@@ -116,11 +120,13 @@ HDI SEGUROS,HDI-Seguros-B3-Lina-OPIN-quote-person-life-v1.11,,,,,,,,,,,,,,,[07-0
 BRADESCO SEGUROS S.A.,BS-QUOTE-PERSON,,,,,,,,,,,,,,,[16-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,
 TOKIO MARINE SEGURADORA S.A,Open-Insurance-Brasil-API-Quote-Person,,,,,,,,,,,,,,,[23-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),[23-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),
 TOO SEGUROS S.A,Too-Seguros-Auth-Server,,,,,,,,,,,,,,,[19-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),[19-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),
+ICATU SEGUROS S.A,Icatu-Seguros-Auth-Server-v2.0.0,,,,,,,,,,,,,,,[06-08-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,
 INDIANA SEGUROS S.A.,OpIn-Indiana-Quote-person-life,,,,,,,,,,,,,,,[08-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,
 YELUM SEGUROS S.A.,OpIn-Yelum-quote-person-life,,,,,,,,,,,,,,,[02-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,
 ITAU SEGUROS S.A.,1.11.0,,,,,,,,,,,,,,,[30-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),[30-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),
 ALLIANZ SEGUROS S.A.,Nexus-for-Open-Insurance-v2.0-(Nov-2024),,,,,,,,,,,,,,,[30-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),[30-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),
 ZURICH SANTANDER BRASIL SEGUROS E PREVIDENCIA S.A.,ZURICH-SANTANDER-BRASIL-SEGUROS-SA-QTPER--3-JUN-25,,,,,,,,,,,,,,,[26-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),[26-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),
+ZURICH BRASIL COMPANHIA DE SEGUROS,CertificaçãoAPIPessoasVida,,,,,,,,,,,,,,,[05-08-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,
 ZURICH BRASIL COMPANHIA DE SEGUROS,CertificaçãoAPIQuoteLifePerson,,,,,,,,,,,,,,,[04-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,
 SUL AMERICA SEGUROS DE PESSOAS E PREVIDENCIA S.A,Sulamérica-B3-Lina-OPIN-quote-person-travel-v1.11.,,,,,,,,,,,,,,,,[03-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),
 CHUBB SEGUROS BRASIL S.A.,Chubb-B3-Lina-Person-Travel-v1.11,,,,,,,,,,,,,,,,[27-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),
@@ -129,6 +135,7 @@ BRADESCO SEGUROS S.A.,BS-Quote-Person-Travel,,,,,,,,,,,,,,,,[16-06-2025](https:/
 INDIANA SEGUROS S.A.,OpIn-Indiana-Quote-person-travel,,,,,,,,,,,,,,,,[09-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),
 PORTO SEGURO CIA DE SEGUROS GERAIS,Porto-Seguro---Consents-v2.7,,,,,,,,,,,,,[02-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),[02-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,[02-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),
 YELUM SEGUROS S.A.,OpIn-Yelum-quote-person-travel,,,,,,,,,,,,,,,,[02-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),
+ZURICH BRASIL COMPANHIA DE SEGUROS,CertificaçãoAPIPessoasViagem,,,,,,,,,,,,,,,,[05-08-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),
 ZURICH BRASIL COMPANHIA DE SEGUROS,CertificaçãoAPIQuoteTravel,,,,,,,,,,,,,,,,[04-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),
 CHUBB SEGUROS BRASIL S.A.,Chubb-opinb3-responsability-v1.8,,,,,,,,,[29-07-2024](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,,,,
 SAFRA SEGUROS GERAIS S.A.,FASE3BL3CTRSIDP,,,,,,,,,[15-08-2024](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,,,,,
@@ -169,9 +176,13 @@ BRASILCAP CAPITALIZACAO S.A.,Brasilcap-Fase3-Withdrawal,,,,,,,,,,,,,,[08-07-2025
 ,SANTANDER-CAPITALIZACAO-SA-CAPWITH-11-JUN-2025,,,,,,,,,,,,,,[23-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,
 BRADESCO SEGUROS S.A.,BS-CAPITALIZATION-TITLE-WITHDRAW,,,,,,,,,,,,,,[21-05-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,
 ZURICH BRASIL COMPANHIA DE SEGUROS,CertificaçãoAPICapTitleWith,,,,,,,,,,,,,,[30-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,
+ZURICH BRASIL COMPANHIA DE SEGUROS,CertificaçãoAPICapitalizaçãoResgate,,,,,,,,,,,,,,[05-08-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,
+SUL AMERICA SEGUROS DE PESSOAS E PREVIDENCIA S.A,Sulamerica-B3-Lina-OPIN-pension-withdraw-v1.3,,,,,,,,,,,,,[22-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,
+SUL AMERICA SEGUROS DE PESSOAS E PREVIDENCIA S.A,Sulamérica-B3-Lina-OPIN-pension-withdraw-v1.3,,,,,,,,,,,,,[17-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,
 CAIXA VIDA E PREVIDENCIA S.A.,pension-withdraw-test-plan,,,,,,,,,,,,,[07-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,
 EVIDENCE PREVIDENCIA S.A.,EVIDENCE-PREVIDENCIA-SA-WITHPENS-16-JUN-25,,,,,,,,,,,,,[24-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,
 XP VIDA E PREVIDENCIA S.A,pension-withdraw-test-plan-e-pension-withdraw-lead,,,,,,,,,,,,,[04-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,
 BRADESCO SEGUROS S.A.,BS-WITHDRAW,,,,,,,,,,,,,[04-04-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,
 ZURICH SANTANDER BRASIL SEGUROS E PREVIDENCIA S.A.,ZURICH-SANTANDER-BRASIL-SEGUROS-SA-WPENS-4-JUN-25,,,,,,,,,,,,,[24-06-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,
 ZURICH BRASIL COMPANHIA DE SEGUROS,CertificaçãoAPIPensionWith,,,,,,,,,,,,,[04-07-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,
+ZURICH BRASIL COMPANHIA DE SEGUROS,CertificaçãoAPIPrevidenciaResgate,,,,,,,,,,,,,[05-08-2025](https://github.com/br-openinsurance/Conformance/git/trees/OICS-1276?recursive=1),,,,
