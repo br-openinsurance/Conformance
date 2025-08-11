@@ -3,6 +3,7 @@ package utils
 import (
 	"encoding/csv"
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -127,7 +128,7 @@ func GenerateFromCsv(inputFile string, outputFile string, headers []string, sepa
 
 	// Replace headersxs
 	for index, value := range headers {
-		toWrite = strings.Replace(toWrite, " " + strconv.Itoa(index), " " + value, 1)
+		toWrite = strings.Replace(toWrite, " "+strconv.Itoa(index), " "+value, 1)
 	}
 
 	// Write result of table to file
@@ -220,8 +221,9 @@ func FilterEntriesWithoutApiData(inputFile string, separator rune) {
 
 	// Process data rows
 	var (
-		removed int
-		kept    int
+		removed        int
+		kept           int
+		removedEntries []string
 	)
 
 	for _, row := range lines[1:] {
@@ -229,6 +231,7 @@ func FilterEntriesWithoutApiData(inputFile string, separator rune) {
 		if len(row) < 2 {
 			// malformed, drop
 			removed++
+			removedEntries = append(removedEntries, fmt.Sprintf("MALFORMED ROW: %v", row))
 			continue
 		}
 
@@ -252,10 +255,21 @@ func FilterEntriesWithoutApiData(inputFile string, separator rune) {
 			kept++
 		} else {
 			removed++
+			// Log which organization is being removed
+			conglomerado := row[0]
+			marca := row[1]
+			removedEntries = append(removedEntries, fmt.Sprintf("%s | %s", conglomerado, marca))
 		}
 	}
 
 	log.Printf("FilterEntriesWithoutApiData: kept=%d removed=%d (total=%d)", kept, removed, kept+removed)
+
+	if len(removedEntries) > 0 {
+		log.Printf("REMOVED ENTRIES (no API data):")
+		for _, entry := range removedEntries {
+			log.Printf("  - %s", entry)
+		}
+	}
 }
 
 func FilterDuplicateEntries(inputFile string, separator rune) {
@@ -308,7 +322,7 @@ func DateFromZipName(zip string) string {
 	if err != nil {
 		log.Fatal("Could not create regular expression: ", err)
 	}
-	
+
 	return re.FindString(zip)
 }
 
@@ -317,6 +331,6 @@ func ConvertDate(date string) string {
 	if err != nil {
 		log.Fatalf("Failed to convert date (%s): %s", date, err)
 	}
-	
+
 	return t.Format("02-Jan-2006")
 }
