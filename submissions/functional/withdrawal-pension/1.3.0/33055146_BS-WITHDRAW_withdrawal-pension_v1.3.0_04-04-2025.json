@@ -1,0 +1,9 @@
+{
+	"api": "withdrawal-pension_v1.3.0",
+	"sd": "15613",
+	"docusign_id": "a675f7a6-ee38-4fae-bb5e-b4db30f20496",
+	"test_plan_uri": [
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=ZfjVXIWZrr3LS\u0026public=true",
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=eTr6uCub9XHcf\u0026public=true"
+	]
+}

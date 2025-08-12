@@ -2,7 +2,9 @@ import argparse
 import os
 import json
 import re
+from .load_allow_list import load_allow_list
 
+ALLOWLIST = load_allow_list()
 
 def validate_json(json_obj, api_version_list):
     validation_rules = [
@@ -50,6 +52,8 @@ def check_json_files(apis):
 
     for directory in directories:
         for filename in os.listdir(directory):
+            if filename in ALLOWLIST:
+                continue
             if filename.endswith(".json"):
                 file_path = os.path.join(directory, filename)
                 with open(file_path) as f:

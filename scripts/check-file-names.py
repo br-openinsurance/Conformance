@@ -2,6 +2,9 @@ import argparse
 import os
 import re
 import json
+from .load_allow_list import load_allow_list
+
+ALLOWLIST = load_allow_list()
 
 
 def parse_args():
@@ -54,6 +57,8 @@ def check_filenames(apis):
         wrong_files[directory] = []
         
         for file in os.listdir(directory):
+            if os.path.basename(file) in ALLOWLIST:
+                continue
             if is_invalid_filename(file, api_name, version):
                 wrong_files[directory].append(file)
         # sort the array of wrong files for better readability

@@ -1,0 +1,9 @@
+{
+	"api": "quote-person-life_v1.11.0",
+	"sd": "16684",
+	"docusign_id": "c07c494f-039f-475c-8313-80ef24e04cd8",
+	"test_plan_uri": [
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=SCO5Z0AoC4TU0\u0026public=true",
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=FHedgft1CGkgp\u0026public=true"
+	]
+}
