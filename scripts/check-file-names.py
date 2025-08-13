@@ -2,7 +2,7 @@ import argparse
 import os
 import re
 import json
-from .load_allow_list import load_allow_list
+from .utils import load_allow_list
 
 ALLOWLIST = load_allow_list()
 
@@ -23,7 +23,7 @@ def is_invalid_filename(filename, api, version):
     if filename in [".DS_Store", "readme.md"]:
         return True
 
-    regex_pattern = r"^\d{8}_.+_(?P<api>[A-Za-z-]+)_v[12](\.[0-9][0-9]?)?(?P<appends>(-[A-Z]{2,4})*)_(0[1-9]|[12]\d|3[01])-(0[1-9]|1[012])-(20\d\d)\."
+    regex_pattern = r"^\d{8}_.+_(?P<api>[A-Za-z-]+)_v[12](\.[0-9][0-9]?)?(\.[0-9])?(?P<appends>(-[A-Z]{2,4})*)_(0[1-9]|[12]\d|3[01])-(0[1-9]|1[012])-(20\d\d)\."
 
     if version == '1.0':
         regex_pattern += r"(zip|ZIP)$"

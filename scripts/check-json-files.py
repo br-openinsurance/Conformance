@@ -2,14 +2,14 @@ import argparse
 import os
 import json
 import re
-from .load_allow_list import load_allow_list
+from .utils import load_allow_list, remove_patch
 
 ALLOWLIST = load_allow_list()
 
 def validate_json(json_obj, api_version_list):
     validation_rules = [
         (len(json_obj) == 4, 'json contains more keys than expected'),
-        ('api' in json_obj and json_obj['api'] in api_version_list, 'api field has an invalid value'),
+        ('api' in json_obj and remove_patch(json_obj['api']) in api_version_list, 'api field has an invalid value'),
         ('sd' in json_obj and re.match(r'^\d+$', json_obj['sd']), 'sd field has an invalid value'),
         ('docusign_id' in json_obj and re.match(r'^[A-Za-z\d]{8}-[A-Za-z\d]{4}-[A-Za-z\d]{4}-[A-Za-z\d]{4}-[A-Za-z\d]{12}$', json_obj['docusign_id']), 'docusign_id field has an invalid value'),
         ('test_plan_uri' in json_obj and (is_valid_test_plan_uri(json_obj['test_plan_uri'])), 'test_plan_uri field has an invalid value')
