@@ -66,6 +66,13 @@ func GenerateTable(apisList []string, phase string, version string) {
 		deploymentName := fileNameSplit[1]
 		api := fileNameSplit[2]
 		version := fileNameSplit[3]
+		// if version has patch, i.e. v1.0.1, we need to remove the patch
+		if strings.Contains(version, ".") {
+			versionSplit := strings.Split(version, ".")
+			if len(versionSplit) > 2 {
+				version = versionSplit[0] + "." + versionSplit[1]
+			}
+		}
 		if len(version) == 2 {
 			version += ".0"
 		}
