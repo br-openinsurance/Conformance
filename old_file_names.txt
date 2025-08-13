@@ -244,3 +244,10 @@
 96348677_Sinistro-_claim-notification-damages_v1.3.0_30-07-2024.json
 96348677_Sinistro_claim-notification-damages_v1.3.0_30-07-2024.json
 96348677_Sinistro_claim-notification-person_v1.3.0_30-07-2024.json
+96348677_CertificaçãoAPIPrevidênciaCotContrat_contract-life-pension_v1.13.0_05-08-2025.json
+01704513_Sulamérica-B3-Lina-OPIN-pension-withdraw-v1.3_withdrawal-pension_v1.3.0_17-07-2025.json
+96348677_CertificaçãoAPIPrevidenciaResgate_withdrawal-pension_v1.3.0_05-08-2025.json
+96348677_CertificaçãoAPICapitalizaçãoResgate_withdrawal-capitalization-title_v1.3.0_05-08-2025.json
+96348677_CertificaçãoAPIPessoasVida_quote-person-life_v1.11.0_05-08-2025.json
+96348677_CertificaçãoAPIPessoasViagem_quote-person-travel_v1.11.0_05-08-2025.json
+96348677_CertificaçãoAPICapitalizaçãoCotContrat_quote-capitalization-title_v1.10.0_05-08-2025.json
