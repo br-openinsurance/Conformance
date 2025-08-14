@@ -53,6 +53,8 @@ func importSubmittedFiles(repositoryUrl string) models.GithubTree {
 		}
 	}
 
+	log.Printf("Found %d files in the submissions folder", len(filteredResults))
+
 	return filteredResults
 }
 

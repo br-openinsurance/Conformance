@@ -3,6 +3,7 @@ package utils
 import (
 	"encoding/csv"
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -127,7 +128,7 @@ func GenerateFromCsv(inputFile string, outputFile string, headers []string, sepa
 
 	// Replace headersxs
 	for index, value := range headers {
-		toWrite = strings.Replace(toWrite, " " + strconv.Itoa(index), " " + value, 1)
+		toWrite = strings.Replace(toWrite, " "+strconv.Itoa(index), " "+value, 1)
 	}
 
 	// Write result of table to file
@@ -174,6 +175,99 @@ func FilterEntriesWithoutConsents(inputFile string, separator rune) {
 			if err := writer.Write(line); err != nil {
 				log.Fatal("Failed to write to file: ", err)
 			}
+		}
+	}
+}
+
+func FilterEntriesWithoutApiData(inputFile string, separator rune) {
+	fileRead, err := os.Open(inputFile)
+	if err != nil {
+		log.Fatalf("Failed to open file for reading: %v", err)
+	}
+	defer fileRead.Close()
+
+	reader := csv.NewReader(fileRead)
+	reader.Comma = separator
+	lines, err := reader.ReadAll()
+	if err != nil {
+		log.Fatalf("Failed to read csv file: %v", err)
+	}
+
+	if len(lines) == 0 {
+		// Nothing to do
+		return
+	}
+
+	// Recreate file (truncate)
+	fileWrite, err := os.Create(inputFile)
+	if err != nil {
+		log.Fatalf("Failed to open file for writing: %v", err)
+	}
+	defer fileWrite.Close()
+
+	writer := csv.NewWriter(fileWrite)
+	writer.Comma = separator
+	defer func() {
+		writer.Flush()
+		if err := writer.Error(); err != nil {
+			log.Fatalf("Failed flushing csv writer: %v", err)
+		}
+	}()
+
+	// Write header back
+	if err := writer.Write(lines[0]); err != nil {
+		log.Fatalf("Failed to write header: %v", err)
+	}
+
+	// Process data rows
+	var (
+		removed        int
+		kept           int
+		removedEntries []string
+	)
+
+	for _, row := range lines[1:] {
+		// Defensive: ensure row has at least the two mandatory columns
+		if len(row) < 2 {
+			// malformed, drop
+			removed++
+			removedEntries = append(removedEntries, fmt.Sprintf("MALFORMED ROW: %v", row))
+			continue
+		}
+
+		hasApiData := false
+		for i := 2; i < len(row); i++ {
+			v := strings.TrimSpace(row[i])
+			if v != "" {
+				// If you want to treat "No date" as *empty*, then uncomment:
+				// if strings.EqualFold(v, "No date") {
+				//     continue
+				// }
+				hasApiData = true
+				break
+			}
+		}
+
+		if hasApiData {
+			if err := writer.Write(row); err != nil {
+				log.Fatalf("Failed to write row: %v", err)
+			}
+			kept++
+		} else {
+			removed++
+			// Log which organization is being removed
+			conglomerado := row[0]
+			marca := row[1]
+			removedEntries = append(removedEntries, fmt.Sprintf("%s | %s", conglomerado, marca))
+		}
+	}
+
+	log.Printf("FilterEntriesWithoutApiData: kept=%d removed=%d (total=%d)", kept, removed, kept+removed)
+
+	if len(removedEntries) > 0 {
+		log.Printf("REMOVED ENTRIES (no API data):")
+		for _, entry := range removedEntries {
+			log.Printf("  - %s", entry)
 		}
 	}
 }
@@ -228,7 +322,7 @@ func DateFromZipName(zip string) string {
 	if err != nil {
 		log.Fatal("Could not create regular expression: ", err)
 	}
-	
+
 	return re.FindString(zip)
 }
 
@@ -237,6 +331,6 @@ func ConvertDate(date string) string {
 	if err != nil {
 		log.Fatalf("Failed to convert date (%s): %s", date, err)
 	}
-	
+
 	return t.Format("02-Jan-2006")
 }
