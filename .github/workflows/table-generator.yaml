@@ -26,6 +26,16 @@ jobs:
       run: |
         cd export_data/
         go run main.go -t phase2 -v current
+
+    - name: Run conformance table generator for current versions of phase 3
+      run: |
+        cd conformance_table_generator/
+        go run main.go -t phase3 -v current
+
+    - name: Run export data for current versions of phase 3
+      run: |
+        cd export_data/
+        go run main.go -t phase3 -v current
     
     - name: Get current date
       id: date
