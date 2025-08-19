@@ -101,6 +101,7 @@ Id da Organização,Deployment,API,Version,Data
 96348677,Cotação-Financeiro,endorsement,v1.2,31-07-2024
 96348677,Endosso,endorsement,v1.2,01-08-2024
 72145931,SwissRe-Branches-Abroad-B3-Lina-OPIN,quote-acceptance-and-branches-abroad,v1.8,29-08-2024
+99999999,dummy,quote-auto,v1.9,03-10-2023
 01582075,Rio-Grande-Seguradora-Auth-Server-v2.0.0,quote-capitalization-title,v1.10,30-06-2025
 03209092,SANTANDER-CAPITALIZACAO-SA-QUOTE-CAP-14-JUL-2025,quote-capitalization-title,v1.10,22-07-2025
 15138043,Brasilcap-Fase-3-Insurance,quote-capitalization-title,v1.10,10-07-2025
@@ -142,6 +143,7 @@ Id da Organização,Deployment,API,Version,Data
 61557039,1.8.0,quote-housing,v1.8,01-10-2024
 87376109,ZS-SEGUROS-QUOTE-HOUSING-11-09-24,quote-housing,v1.8,13-09-2024
 96348677,CertificaçãoAPIQuoteHousing,quote-housing,v1.8,17-10-2024
+99999999,dummy,quote-patrimonial-home,v1.10,03-10-2023
 01582075,Rio-Grande-Seguradora-Auth-Server-v2.0.0,quote-person-life,v1.11,08-08-2025
 01704513,Sulamérica-B3-Lina-OPIN-quote-person-life-v1.11.0,quote-person-life,v1.11,03-07-2025
 03502099,Chubb-B3-Lina-Quote-Person-Life-v1.11,quote-person-life,v1.11,26-06-2025
