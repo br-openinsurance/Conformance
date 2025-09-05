@@ -43,6 +43,7 @@ Id da Organização,Deployment,API,Version,Data
 01704513,Sulamérica-B3-Lina-OPIN-contract-life-pension-v1.1,contract-life-pension,v1.13,07-07-2025
 03730204,contract-life-pension-test-plan-v1.13,contract-life-pension,v1.13,07-07-2025
 19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,contract-life-pension,v1.13,03-07-2025
+27665207,Brasilprev-Seguros-e-Previdência-S.A.,contract-life-pension,v1.13,03-09-2025
 29408732,contract-life-pension-test-plan-v1.13-e-webhook,contract-life-pension,v1.13,07-07-2025
 33055146,BS-QUOTE-LIFE-PENSION,contract-life-pension,v1.13,01-04-2025
 42283770,Icatu-Seguros-Auth-Server-v2.0.0,contract-life-pension,v1.13,20-06-2025
@@ -245,6 +246,7 @@ Id da Organização,Deployment,API,Version,Data
 03730204,pension-withdraw-test-plan,withdrawal-pension,v1.3,07-07-2025
 13615969,EVIDENCE-PREVIDENCIA-SA-WITHPENS-16-JUN-25,withdrawal-pension,v1.3,24-06-2025
 19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,withdrawal-pension,v1.3,30-06-2025
+27665207,Brasilprev-Seguros-e-Previdência-S.A.,withdrawal-pension,v1.3,03-09-2025
 29408732,pension-withdraw-test-plan-e-pension-withdraw-lead,withdrawal-pension,v1.3,04-07-2025
 33055146,BS-WITHDRAW,withdrawal-pension,v1.3,04-04-2025
 42283770,Icatu-Seguros-Auth-Server-v2.0.0,withdrawal-pension,v1.3,26-06-2025
