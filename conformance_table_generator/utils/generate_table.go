@@ -91,6 +91,13 @@ func GenerateTable(apisList []string, phase string, version string) {
 		})
 
 		apiIndex := findApiIndex(apisList, translateNameFromFileNameToApisList(api, version))
+
+		// Skip processing if API is not found in the list to prevent incorrect column placement
+		if apiIndex == -1 {
+			log.Printf("Warning: API '%s' with version '%s' not found in API list. Skipping file: %s", api, version, file)
+			continue
+		}
+
 		if ind := searchFileInTable(table, orgName, deploymentName); ind == -1 {
 			newRow := make([]string, len(tableHeaders))
 			newRow[0] = orgName
@@ -176,5 +183,20 @@ func translateNameFromFileNameToApisList(api string, version string) string {
 	if len(strings.Split(version, "-")[0]) == 2 {
 		version = "v1.0"
 	}
+
+	// Handle specific API name mappings where filename doesn't match API list
+	apiMappings := map[string]string{
+		"capitalization-title": "insurance-capitalization-title",
+		"life-pension":         "insurance-life-pension",
+		"pension-plan":         "insurance-pension-plan",
+		"person":               "insurance-person",
+		"financial-assistance":  "insurance-financial-assistance",
+	}
+
+	// Apply mapping if exists, otherwise use original API name
+	if mappedApi, exists := apiMappings[api]; exists {
+		api = mappedApi
+	}
+
 	return api + "_" + strings.Split(version, "-")[0]
 }
