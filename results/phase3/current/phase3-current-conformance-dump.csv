@@ -42,6 +42,7 @@ Id da Organização,Deployment,API,Version,Data
 01582075,Rio-Grande-Seguradora-Auth-Server-v2.0.0,contract-life-pension,v1.13,20-06-2025
 01704513,Sulamérica-B3-Lina-OPIN-contract-life-pension-v1.1,contract-life-pension,v1.13,07-07-2025
 03730204,contract-life-pension-test-plan-v1.13,contract-life-pension,v1.13,07-07-2025
+06109373,FASE3CLP,contract-life-pension,v1.13,14-11-2025
 19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,contract-life-pension,v1.13,03-07-2025
 27665207,Brasilprev-Seguros-e-Previdência-S.A.,contract-life-pension,v1.13,03-09-2025
 29408732,contract-life-pension-test-plan-v1.13-e-webhook,contract-life-pension,v1.13,07-07-2025
@@ -149,16 +150,20 @@ Id da Organização,Deployment,API,Version,Data
 01704513,Sulamérica-B3-Lina-OPIN-quote-person-life-v1.11.0,quote-person-life,v1.11,03-07-2025
 03502099,Chubb-B3-Lina-Quote-Person-Life-v1.11,quote-person-life,v1.11,26-06-2025
 03546261,Cardif-Vida-B3-Lina-OPIN-quote-person-life-v1.11.0,quote-person-life,v1.11,04-07-2025
+03546261,CardifVida-B3-Lina-person-life-v1.11.0,quote-person-life,v1.11,02-10-2025
 03730204,quote-person-life-test-plan-v1.11.0,quote-person-life,v1.11,07-07-2025
+06109373,FASE3PERLF,quote-person-life,v1.11,17-11-2025
 21986074,Prudential-B3-Lina-OPIN-quote-life-v1.11.0,quote-person-life,v1.11,02-07-2025
 28196889,Quote-person-life,quote-person-life,v1.11,02-07-2025
 29408732,XP,quote-person-life,v1.11,04-07-2025
 29408732,XP,quote-person-life,v1.11,10-07-2025
 29980158,-HDI-Seguros-B3-Lina-OPIN-quote-person-life-v1.11,quote-person-life,v1.11,08-07-2025
 29980158,HDI-Seguros-B3-Lina-OPIN-quote-person-life-v1.11.0,quote-person-life,v1.11,07-07-2025
+29980158,HDISeguros-B3-Lina--person-life--v1.11.0,quote-person-life,v1.11,03-10-2025
 33055146,BS-QUOTE-PERSON,quote-person-life,v1.11,16-06-2025
 33164021,Open-Insurance-Brasil-API-Quote-Person,quote-person-life,v1.11,23-06-2025
 33245762,Too-Seguros-Auth-Server,quote-person-life,v1.11,19-06-2025
+34020354,Youse-OPIN-v1.5,quote-person-life,v1.11,11-11-2025
 42283770,Icatu-Seguros-Auth-Server-v2.0.0,quote-person-life,v1.11,06-08-2025
 61074175,MAPFRE-OP-v1,quote-person-life,v1.11,05-06-2025
 61100145,OpIn-Indiana-Quote-person-life,quote-person-life,v1.11,08-07-2025
@@ -172,6 +177,8 @@ Id da Organização,Deployment,API,Version,Data
 01704513,Sulamérica-B3-Lina-OPIN-quote-person-travel-v1.11.,quote-person-travel,v1.11,03-07-2025
 03502099,Chubb-B3-Lina-Person-Travel-v1.11.0,quote-person-travel,v1.11,27-06-2025
 03546261,Cardif-Vida-B3-Lina-OPIN-quote-person-travel-v1.11,quote-person-travel,v1.11,04-07-2025
+03546261,CardifVida-B3-Lina-person-life-v1.11.0,quote-person-travel,v1.11,02-10-2025
+06109373,FASE3PTV,quote-person-travel,v1.11,17-11-2025
 33055146,BS-QUOTE-PERSON-TRAVEL,quote-person-travel,v1.11,16-06-2025
 33164021,Open-Insurance-Brasil-API-Quote-Person,quote-person-travel,v1.11,23-06-2025
 33245762,Too-Seguros-Auth-Server,quote-person-travel,v1.11,19-06-2025
@@ -244,6 +251,7 @@ Id da Organização,Deployment,API,Version,Data
 01704513,Sulamerica-B3-Lina-OPIN-pension-withdraw-v1.3,withdrawal-pension,v1.3,22-07-2025
 01704513,Sulamérica-B3-Lina-OPIN-pension-withdraw-v1.3,withdrawal-pension,v1.3,17-07-2025
 03730204,pension-withdraw-test-plan,withdrawal-pension,v1.3,07-07-2025
+06109373,FASE3PENSWD,withdrawal-pension,v1.3,14-11-2025
 13615969,EVIDENCE-PREVIDENCIA-SA-WITHPENS-16-JUN-25,withdrawal-pension,v1.3,24-06-2025
 19449767,BTG-Pactual-Vida-e-Prev-OPIN-v1.0.0,withdrawal-pension,v1.3,30-06-2025
 27665207,Brasilprev-Seguros-e-Previdência-S.A.,withdrawal-pension,v1.3,03-09-2025
