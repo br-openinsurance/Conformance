@@ -1,0 +1,8 @@
+{
+	"api": "quote-person-travel_v1.11.0",
+	"sd": "19738",
+	"test_plan_uri": [
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=6YaybedOJZZkI\u0026public=true",
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=1hjt0wMTJiwD5\u0026public=true"
+	]
+}
