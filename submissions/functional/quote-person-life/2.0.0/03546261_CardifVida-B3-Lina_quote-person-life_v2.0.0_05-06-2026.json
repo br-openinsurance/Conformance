@@ -1,0 +1,8 @@
+{
+	"api": "quote-person-life_v2.0.0",
+	"sd": "20198",
+	"test_plan_uri": [
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=BKov85ktY11jb\u0026public=true",
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=0bluq7N3WC2tF\u0026public=true"
+	]
+}
