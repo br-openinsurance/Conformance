@@ -1,0 +1,10 @@
+{
+	"api": "quote-patrimonial-condominium_v2.0.0",
+	"sd": "20931",
+	"test_plan_uri": [
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=JXPlb0Lkf866p\u0026public=true",
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=L6dmxNp6gE8QQ\u0026public=true",
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=FnEh3zpbxwyAR\u0026public=true",
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=PlHqsZArw0Oqz\u0026public=true"
+	]
+}
