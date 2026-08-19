@@ -1,0 +1,10 @@
+{
+	"api": "quote-patrimonial-home_v2.0.0",
+	"sd": "20929",
+	"test_plan_uri": [
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=4FL1pdrmdyT9U\u0026public=true",
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=AVyIZbHMxfbzH\u0026public=true",
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=UPaojQ1kYGYRV\u0026public=true",
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=dIOXdZb4J3GwY\u0026public=true"
+	]
+}
