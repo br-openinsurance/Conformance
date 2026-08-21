@@ -1,0 +1,8 @@
+{
+	"api": "quote-patrimonial-extended-warranty_v2.0.0",
+	"sd": "20970",
+	"test_plan_uri": [
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=tHW7eBWB4HTtp\u0026public=true",
+		"https://web.conformance.directory.opinbrasil.com.br/plan-detail.html?plan=3SkFWsTeScGDE\u0026public=true"
+	]
+}
